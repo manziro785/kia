@@ -1,0 +1,140 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для хедера */
+    z-index: 3;
+}
+
+.header-logo {
+    width: 160px;
+    height: 50px;
+    margin-left: 238px;
+    margin-top: 10px;
+    margin-right: 538px;
+
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-nav {
+    display: flex;
+    margin-right: 230px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0.4000000059604645px;
+text-align: left;
+
+}
+
+.header-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-item-1{
+    width: 188px;
+height: 20px;
+margin-right: 41px;
+}
+
+.header-item-2{
+    width: 86px;
+height: 21px;
+margin-right: 53px;
+}
+.header-item-3{
+    width: 104px;
+height: 20px;
+margin-right: 60px;
+display: flex;
+flex-direction: row;
+}
+
+.header-link {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.header-link {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.header-link::before, .header-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background-color: purple;
+    transition: width 0.3s ease;
+}
+
+.header-link::before {
+    left: 50%;
+}
+
+.header-link::after {
+    right: 50%;
+}
+
+.header-link:hover::before, .header-link:hover::after {
+    width: 50%;
+}
+
+/* Intro style */
+.intro {
+    height: 100vh;
+    background: url("../img/svg/asia mall 1.svg") no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.intro::after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: linear-gradient(to bottom, rgba(43, 16, 40, 0) 0%, rgba(43, 16, 40, 0.5) 100%);
+    z-index: 2;
+}
+
+
+.big-logo {
+    position: relative; /* Относительное позиционирование */
+    top: 70px; /* Отступ сверху */
+}
+
+.big-logo img {
+}
+
+
+.video {
+    width: 710px;
+height: 400px;
+background-color: black;
+outline: 3px solid #BE2858; /* Устанавливаем границу снаружи */
+position: relative;
+z-index: 3;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* чтобы видео занимало всю площадь контейнера */
+}
