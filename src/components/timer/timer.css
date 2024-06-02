@@ -1,0 +1,75 @@
+.container-n {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Центрирование по вертикали */
+    flex-direction: column; /* Направление flex-контейнера на столбец */
+ z-index: 10;
+ position: relative;
+
+}
+  
+  .content-n {
+    width: 1343px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 42.24px;
+    text-align: left;
+    margin-bottom: 82px; /* Отступ вниз */
+  }
+  
+  .timer-n {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-top: 5px solid #DA195D; /* Граница сверху */
+    border-bottom: 5px solid #DA195D;
+  }
+  .doub {
+    font-size: 120px;
+    font-weight: 600;
+    margin-left: 0px;
+    color: #DA195D;
+  }
+  .sapn-tt {
+    font-size: 35px;
+    color: #FBB72D;
+  }
+  #days,  #hours  {
+    font-size: 90px;
+    font-weight: 800;
+  }
+  #minutes, #seconds {
+    font-size: 90px;
+    font-weight: 800;
+  }
+
+  
+  .purple-n {
+    color: #DA195D;
+  }
+  
+  .countdown-n {
+    width: 706px; /* Ширина */
+    height: 252px; /* Высота */
+    font-size: 73px; /* Размер шрифта */
+    display: flex;
+    justify-content: space-between; /* Распределение по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+  }
+  
+  .countdown-n div {
+    text-align: center; /* Выравнивание текста по центру */
+  }
+  
+  .time-unit-n {
+    font-size: 73px; /* Размер шрифта для единиц времени */
+  }

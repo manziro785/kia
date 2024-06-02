@@ -115,6 +115,7 @@ export default function Calendar() {
 
   return (
     <>
+    <div className="wrapp-main">
     <div className="wrapper-calen">
     <div className="events-calendar">
       <div className="calendar-header">
@@ -162,6 +163,7 @@ export default function Calendar() {
     </div></div>
     <div className= 'photo-container1' >
       <img src="./src/assets/calendar/scorpion 1.svg" alt="Your Photo" className="scroll-photo" />
+    </div>
     </div>
     </div>
 

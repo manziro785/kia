@@ -42,6 +42,7 @@ export default function Car() {
     <div>
         
         <div className="wrapp-car">
+            <div className="overlay"></div>
             <div className="title-car">
 <img src="./src/assets/car/Frame 1 (1).svg" alt="" />
             </div>
@@ -54,7 +55,7 @@ export default function Car() {
 
                 </div>
             </div>
-            <div className="car-img">
+            <div className="photo-container2">
                 <img src="./src/assets/car/kiiia 1.svg" alt="" />
             </div>
         </div>

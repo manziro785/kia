@@ -14,7 +14,7 @@ body {
 
   }
   .events-calendar {
-    width: 87%;
+    width: 50%;
     /* max-width: 1200px; */
     text-align: center;
   }
@@ -98,17 +98,22 @@ transition: all 0.4s ease;
 .wrap-cal {
     width: 103%;
 }
+.wrapp-main {
+    box-sizing: border-box
+}
 .calendar-header h1 {
     font-size: 40px;
     margin-left: 30px;
 }
 
 .wrapper-calen {
-    background-image: url('./src/assets/calendar/mapp 2.svg');
+    background-image: url('./src/assets/calendar/caledar.svg');
+    box-sizing: border-box;
+
 }
 
 .wrapper-calen::before {
-    content: '';
+     content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -117,7 +122,7 @@ transition: all 0.4s ease;
     background: linear-gradient(to bottom, #2B1028, #5e2357b9, #2B1028); /* Purple color with 50% opacity */
     pointer-events: none;
     z-index: 1;
-  }
+  } 
 
   .wrapper-calen > * {
     position: relative;

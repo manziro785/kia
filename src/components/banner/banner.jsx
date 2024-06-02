@@ -8,16 +8,23 @@ export default function Banner() {
         <Header/>
 
 <main>
+
+    <div className="title-mm">
+        {/* <img src="./src/assets/car/Frame 3.svg" alt="" /> */}
+    </div>
+    <div className='tt'><img src="./src/assets/car/0.svg" alt="" /></div>
+
+   <div className="ovv"></div>
+
       <div className="intro">
         <div className="big-logo">
-          <img src="../img/svg/KIA_background 2.svg" alt="Big Logo" />
         </div>
-        <div className="video">
+        {/* <div className="video">
           <video controls>
             <source src="../img/6060027-uhd_2160_3840_25fps.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
       </div>
     </main>
     </div>

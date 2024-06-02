@@ -4,6 +4,7 @@
 /* Now, you can use the Montserrat font in your styles */
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #2B1028;
   margin: 0;
   padding: 0;
 }

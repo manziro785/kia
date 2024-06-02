@@ -8,7 +8,7 @@ export default function Header() {
         <div className="header-wrapper">
           <div className="header-logo">
             <a href="/" className="header-logo-link">
-              <img src="../img/svg/KIA_background 2.svg" alt="Logo" />
+              <img src="./src/assets/header/llogo.svg" alt="Logo" />
             </a>
           </div>
           <nav className="header-nav">
@@ -20,7 +20,7 @@ export default function Header() {
                 <a href="/" className="header-link">СМОТРЕТЬ</a>
               </li>
               <li className="header-item-3">
-                <a href="/" className="header-link">УЧАСТНИКИ <img src="../img/svg/Vector.svg" alt="Vector" /></a>
+                <a href="/" className="header-link">УЧАСТНИКИ </a>
               </li>
               <li className="header-item-4">
                 <a href="/" className="header-link">СВЯЗАТЬСЯ С НАМИ</a>

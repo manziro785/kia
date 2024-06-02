@@ -1,0 +1,59 @@
+.wrapp-main-n {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wrapper-calen-n {
+    position: relative;
+  }
+  
+  .events-calendar-n {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .calendar-header-n {
+    margin-bottom: 20px;
+  }
+  
+  .wrap-cal-n {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .events-slider-wrapper-n {
+    display: flex;
+    width: 100%;
+  }
+  
+  .events-slider-n {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .event-n {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .event-n img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .photo-container1-n {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .scroll-photo-n {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  

@@ -1,4 +1,57 @@
 .title-car {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    padding-top: 50px;
+
+}
+.title-car img {
+    width: 50%;
+    
+}
+
+.info-car div {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+.text-car {
+    padding-left: 60px;
+    margin-top: 70px;
+}
+
+.photo-container2 {
+    position: absolute;
+    right: -1000px;
+    margin-top: -230px;
+    transition: right 1.2s ease-in-out; /* Плавное изменение свойства right */
+  }
+  
+  .photo-container2 img {
+    width: 90%;
+  }
+  
+  .photo-container2.show {
+    right: -200px;
+  }
+  
+  .wrapp-car {
+    position: relative; /* Необходимо для позиционирования других элементов внутри */
+  }
+  
+  .overlay {
+    background-image: url('./src/assets/car/Group 59.svg');
+    background-size: cover; /* Позволяет изображению занимать всю доступную область */
+    background-position: center; /* Центрирует изображение на фоне */
+    position: absolute; /* Позиционируем абсолютно внутри родителя .wrapp-car */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Помещаем фоновое изображение позади других элементов */
+ padding-bottom: 120px;
+ 
+
 }

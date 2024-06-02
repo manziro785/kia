@@ -1,0 +1,206 @@
+server {
+    listen 80;
+    server_name 217.151.230.35;
+    root /var/www/CTFd;
+
+    location / {
+        proxy_pass http://127.0.0.1:8888;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+
+server {
+    listen 199;
+    server_name 217.151.230.35;
+
+    root /var/www/cyberkol/;
+
+    client_max_body_size 600M;
+
+    location / {
+        proxy_pass http://127.0.0.1:1909;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /media/ {
+        alias /var/www/cyberkol/media/;
+    }
+
+    location /static/ {
+        alias /var/www/cyberkol/static/;
+    }
+}
+
+server {
+    listen 200;
+    server_name 217.151.230.35;
+    
+    root /var/www/kia/;
+    
+    client_max_body_size 600M;
+
+    location / {
+        proxy_pass http://127.0.0.1:2000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+    
+    location /static/ {
+        alias /var/www/kia/static/;
+    }
+    
+}
+
+
+
+server {
+    listen 1000;
+    server_name 217.151.230.35;
+    root /var/www/it-fest;
+
+    location / {
+        index index.html;
+        try_files $uri $uri/ =404;
+    }
+
+    # Дополнительно можно указать типы содержимого
+    types {
+        text/html html;
+        text/css css;
+        image/jpeg jpeg jpg;
+        image/png png;
+	image/svg+xml svg;
+    }
+}
+
+server {
+    listen 1100;
+    server_name 217.151.230.35;
+    root /var/www/it-fest_demo;
+
+    location / {
+        index index.html;
+        try_files $uri $uri/ =404;
+    }
+
+    # Дополнительно можно указать типы содержимого
+    types {
+        text/html html;
+        text/css css;
+        image/jpeg jpeg jpg;
+        image/png png;
+	image/svg+xml svg;
+    }
+}
+
+server {
+    listen 443 ssl;
+    server_name alatooctf.com www.alatooctf.com;
+
+    root /var/www/CTFd;
+
+    location / {
+        proxy_pass http://127.0.0.1:8888;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+   }
+
+   ssl_certificate /etc/letsencrypt/live/alatooctf.com/fullchain.pem;
+   ssl_certificate_key /etc/letsencrypt/live/alatooctf.com/privkey.pem;
+}
+
+server {
+    listen 888;
+    server_name 217.151.230.35;
+
+    root /var/www/StartappMania-Backend;
+    index index.html index.htm index.nginx-debian.html;
+
+    location /api/ {
+        proxy_pass http://127.0.0.1:8000;  # Проксирование к Django-приложению
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /admin/ {
+        proxy_pass http://127.0.0.1:8000;  # Проксирование к Django-приложению
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /api/schema/swagger-ui/ {
+        proxy_pass http://127.0.0.1:8000;  # Проксирование к Django-приложению
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /static/ {
+       alias /var/www/StartappMania-Backend/static/;  # Замените на путь к статическим файлам Django
+    }
+
+    location /media/ {
+        alias /var/www/StartappMania-Backend/media/;  # Замените на путь к медиа файлам Django
+    }
+
+    location / {
+       try_files $uri $uri/ =404;
+    }
+
+    access_log /var/log/nginx/app-access.log;
+    error_log /var/log/nginx/app-error.log;
+}
+
+server {
+    listen 666;
+   server_name localhost;
+
+    location / {
+       root /var/www/hogwarts;
+        index index.html index.htm;
+   }
+
+}
+
+server {
+    listen 545;
+    server_name 217.151.230.35; 
+
+    root /var/www/ORT;
+
+    index index.html index.htm index.nginx-debian.html;
+
+    location /static/ {
+       alias /var/www/ORT/static/;  # Путь к каталогу со статическими файлами Django
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://127.0.0.1:5455;  # Проксирование на порт, который вы указали в Gunicorn
+        proxy_redirect off;
+    }
+
+    location /api/ {
+       proxy_pass http://127.0.0.1:5455;  # Проксирование к Django-приложению
+       proxy_set_header Host $host;
+       proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /admin/ {
+       proxy_pass http://127.0.0.1:5455;  # Проксирование к Django-приложению
+       proxy_set_header Host $host;
+       proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+
+
