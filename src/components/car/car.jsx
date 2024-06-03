@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './car.css'
+import d1 from '../../assets/car/Frame 1 (1).svg'
+import d2 from '../../assets/car/kiiia 1.svg'
+
 
 export default function Car() {
 
@@ -44,7 +47,7 @@ export default function Car() {
         <div className="wrapp-car">
             <div className="overlay"></div>
             <div className="title-car">
-<img src="./src/assets/car/Frame 1 (1).svg" alt="" />
+<img src={d1} alt="" />
             </div>
             <div className="text-car">
                 <div className='info-car'>
@@ -56,7 +59,7 @@ export default function Car() {
                 </div>
             </div>
             <div className="photo-container2">
-                <img src="./src/assets/car/kiiia 1.svg" alt="" />
+                <img src={d2} alt="" />
             </div>
         </div>
         

@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../../assets/header/llogo.svg';
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
         <div className="header-wrapper">
           <div className="header-logo">
             <a href="/" className="header-logo-link">
-              <img src="./src/assets/header/llogo.svg" alt="Logo" />
+              <img src={logo} alt="Logo" />
             </a>
           </div>
           <nav className="header-nav">

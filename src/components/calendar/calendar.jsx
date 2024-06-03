@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './calendar.css';
+import a1 from '../../assets/calendar/Vector (2).svg'
+import img1 from '../../assets/calendar/Group 40 (1).svg';
+
+import img2 from '../../assets/calendar/15.svg';
+import img3 from '../../assets/calendar/14.svg';
+import img4 from '../../assets/calendar/Group - 1.svg';
+import img5 from '../../assets/calendar/Group2.svg';
+import img6 from '../../assets/calendar/Group3.svg';
+
+
 
 const events = [
   {
@@ -127,28 +137,27 @@ export default function Calendar() {
       </div>
 <div className="wrap-cal">
 <button onClick={handlePrevClick} disabled={currentPage === 0}>
-            <img src="./src/assets/calendar/Vector (2).svg" alt="" />
+            <img src={a1} alt="" />
           </button>
       <div className="events-slider-wrapper">
       
         <div className="events-slider" style={{ transform: `translateX(${-currentPage * 100}%)` }}>
            
             <div className="event" >
-                <img src="./src/assets/calendar/Group 40 (1).svg" alt="" />
-                <img src="./src/assets/calendar/15.svg" alt="" />
-                <img src="./src/assets/calendar/14.svg" alt="" />
-                <img src="./src/assets/calendar/Group - 1.svg" alt="" />
-                <img src="./src/assets/calendar/Group2.svg" alt="" />
-                <img src="./src/assets/calendar/Group3.svg" alt="" />
+                <img src={img1} alt="" />
+                <img src={img2} alt="" />
+                <img src={img3} alt="" />
+                <img src={img4} alt="" />
+                <img src={img5} alt="" />
+                <img src={img6} alt="" />
             </div>
             <div className="event" >
-            <img src="./src/assets/calendar/Group 40 (1).svg" alt="" />
-             <img src="./src/assets/calendar/15.svg" alt="" />
-             <img src="./src/assets/calendar/14.svg" alt="" />
-             <img src="./src/assets/calendar/Group - 1.svg" alt="" />
-             <img src="./src/assets/calendar/Group2.svg" alt="" />
-             <img src="./src/assets/calendar/Group3.svg" alt="" />
-         
+            <img src={img1} alt="" />
+                <img src={img2} alt="" />
+                <img src={img3} alt="" />
+                <img src={img4} alt="" />
+                <img src={img5} alt="" />
+                <img src={img6} alt="" />
             </div>
           
           

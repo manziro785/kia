@@ -1,6 +1,8 @@
 import React from 'react'
 import './banner.css'
 import Header from '../header/header'
+import dd from '../../assets/car/0.svg'
+
 
 export default function Banner() {
   return (
@@ -12,7 +14,7 @@ export default function Banner() {
     <div className="title-mm">
         {/* <img src="./src/assets/car/Frame 3.svg" alt="" /> */}
     </div>
-    <div className='tt'><img src="./src/assets/car/0.svg" alt="" /></div>
+    <div className='tt'><img src={dd} alt="" /></div>
 
    <div className="ovv"></div>
 
