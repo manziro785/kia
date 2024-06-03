@@ -57,3 +57,35 @@
     object-fit: cover;
   }
   
+  .events-calendar1 {
+    width: 45%;
+    /* max-width: 1200px; */
+    text-align: center;
+  }
+  .box1 {
+    display: flex;
+
+  }
+  .right img {
+    width: 700px;
+  }
+  .ups span {
+    color: #B4002D;
+
+
+  }
+  .ups {
+    font-size: 70px;
+    font-weight: 800;
+  }
+  .dd {
+    font-size: 40px;
+    color: #ffff;
+  }
+  .left {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+  }

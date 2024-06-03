@@ -1,0 +1,61 @@
+.sponsors {
+    padding: 20px 0;
+    background: #2B1028;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-top: 120px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sponsor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sponsor-item {
+    flex: 1 1 calc(25% - 20px); /* Рассчитывает ширину элементов, чтобы они равномерно распределялись */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 308px;
+}
+
+.sponsor-image {
+    max-height: 96px;
+    max-width: 100%;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .sponsor-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .sponsor-item {
+        flex: 1 1 100%;
+    }
+}

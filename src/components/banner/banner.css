@@ -11,9 +11,7 @@
 .header-logo {
     width: 10px;
     height: 50px;
-    margin-left: 138px;
     margin-top: 10px;
-    margin-right: 438px;
 
 }
 .header-logo img {
@@ -23,15 +21,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 100px;
     width: 100%;
 }
 
 .header-nav {
     display: flex;
-    margin-right: 130px;
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
+margin-right: 200px;
 line-height: 20px;
 letter-spacing: 0.4000000059604645px;
 text-align: left;
@@ -54,12 +53,12 @@ margin-right: 41px;
 .header-item-2{
     width: 86px;
 height: 21px;
-margin-right: 53px;
+margin-right: 41px;
 }
 .header-item-3{
     width: 104px;
 height: 20px;
-margin-right: 60px;
+margin-right: 41px;
 display: flex;
 flex-direction: row;
 }

@@ -107,8 +107,9 @@ transition: all 0.4s ease;
 }
 
 .wrapper-calen {
-    background-image: url('./src/assets/calendar/caledar.svg');
-    box-sizing: border-box;
+    /* background-image: url('./src/assets/calendar/calendar.svg'); */
+  background-position:center;
+      
 
 }
 
