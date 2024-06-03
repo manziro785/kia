@@ -23,7 +23,7 @@ export default function MainPage() {
     {/* <img src="./src/assets/header/Frame 4.svg"style={{width: '210vh', marginTop: '100px'}} alt="" /> */}
     <GameSection/>
     <Watch/>
-    <Partners/>
+    {/* <Partners/> */}
     {/* <FAQ/> */}
     <img src={cs22} style={{width: '210vh', marginTop: '100px'}} alt="" />
 

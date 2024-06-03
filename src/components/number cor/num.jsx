@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './num.css';
+import imm from '../../assets/calendar/Vector (2).svg'
+
+import imm2 from '../../assets/corusel/1.1.svg'
+import imm3 from '../../assets/corusel/1.2.svg'
+
 
 const events = [
   {
@@ -127,7 +132,7 @@ export default function Num() {
       </div>
 <div className="wrap-cal">
 <button onClick={handlePrevClick} disabled={currentPage === 0}>
-            <img src="./src/assets/calendar/Vector (2).svg" alt="" />
+            <img src={imm} alt="" />
           </button>
       <div className="events-slider-wrapper">
       
@@ -144,7 +149,7 @@ export default function Num() {
                     </div>
                   </div>
                   <div className="right">
-                    <img src="./src/assets/corusel/1.1.svg" alt="" />
+                    <img src={imm2} alt="" />
                   </div>
                 </div>
             </div>
@@ -158,7 +163,7 @@ export default function Num() {
                     500+ участников                    </div>
                   </div>
                   <div className="right">
-                    <img src="./src/assets/corusel/1.2.svg" alt="" />
+                    <img src={imm3} alt="" />
                   </div>
                 </div>
             </div>
