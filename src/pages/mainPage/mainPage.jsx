@@ -11,6 +11,9 @@ import cs22 from '../../assets/header/Frame 5 (2).svg'
 import FAQ from '../../components/questions/question'
 
 
+
+
+
 export default function MainPage() {
   return (
     <>
@@ -24,8 +27,9 @@ export default function MainPage() {
     <GameSection/>
     <Watch/>
     {/* <Partners/> */}
-    {/* <FAQ/> */}
-    <img src={cs22} style={{width: '210vh', marginTop: '100px'}} alt="" />
+    <Partners/>
+    <FAQ/>
+    {/* <img src={cs22} style={{width: '210vh', marginTop: '100px'}} alt="" /> */}
 
     </>
   )

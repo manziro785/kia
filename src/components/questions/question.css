@@ -1,8 +1,12 @@
+
+
+
 .faq-container {
     position: relative;
     padding: 20px;
     max-width: 1200px;
     margin: auto;
+    margin-top: 100px;
 }
 
 .background-image {
@@ -38,8 +42,10 @@
 .faq-title {
     text-align: center;
     color: #ff0066;
-    margin-bottom: 20px;
-    font-size: 2em;
+    font-weight: 800;
+
+    margin-bottom: 40px;
+    font-size: 3em;
 }
 
 .faq {

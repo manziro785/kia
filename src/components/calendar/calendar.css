@@ -53,7 +53,7 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
-  .wrap-cal {
+  .wrap-cal, .wrap-call {
     display: flex;
   }
   
@@ -84,18 +84,18 @@ body {
     width: fit-content;
     
 }
-.wrap-cal button {
+.wrap-cal button, .wrap-call button {
 background: none;
 border: none;
 padding: 0;
 transition: all 0.4s ease;
 
 }
-.wrap-cal button:hover {
+.wrap-cal button:hover, .wrap-cal button:hover {
     transform: scale(1.2);
     
     }
-.wrap-cal {
+.wrap-cal, .wrap-call {
     width: 103%;
 }
 .wrapp-main {
@@ -107,7 +107,6 @@ transition: all 0.4s ease;
 }
 
 .wrapper-calen {
-    /* background-image: url('./src/assets/calendar/calendar.svg'); */
   background-position:center;
       
 
@@ -124,6 +123,7 @@ transition: all 0.4s ease;
     pointer-events: none;
     z-index: 1;
   } 
+
 
   .wrapper-calen > * {
     position: relative;
@@ -148,4 +148,93 @@ transition: all 0.4s ease;
 }
 .events-calendar {
     z-index: 10;
+}
+
+@media (max-width: 1500px) {
+  .events-calendar {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 1300px) {
+  .events-calendar {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 1115px) {
+  .events-calendar {
+    transform: scale(0.7);
+  }
+  .photo-container1 {
+    transform: scale(0.9);
+
+  }
+}
+
+@media (max-width: 976px) {
+  .events-calendar {
+    transform: scale(0.6);
+  }
+  .photo-container1 {
+    transform: scale(0.8);
+
+  }
+  .calendar-header {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 857px) {
+  .events-calendar {
+    transform: scale(0.5);
+  }
+  .photo-container1 {
+    transform: scale(0.6);
+    left:-2000px;
+
+  }
+  .calendar-header {
+    margin-top: 200px !important;
+    margin-bottom: 0 !important;
+  }
+  .photo-container1.show {
+    left:-120px;
+
+  }
+}
+
+@media (max-width: 680px) {
+  .events-calendar {
+    transform: scale(0.4);
+  }
+  .photo-container1 {
+    transform: scale(0.5);
+    left:-2000px;
+
+  }
+  .wrap-call {
+    margin-top: 130px !important;
+  }
+  .wrapper-calen {
+    margin-top: -400px;
+  }
+  .photo-container1.show {
+    left:-200px;
+
+  }
+}
+@media (max-width: 560px) {
+  .events-calendar {
+    transform: scale(0.3);
+  }
+  .photo-container1 {
+    transform: scale(0.4);
+    left:-2000px;
+
+  }
+  .photo-container1.show {
+    left:-240px;
+
+  }
 }

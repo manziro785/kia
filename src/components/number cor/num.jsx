@@ -130,7 +130,7 @@ export default function Num() {
 
         </div>
       </div>
-<div className="wrap-cal">
+<div className="wrap-call">
 <button onClick={handlePrevClick} disabled={currentPage === 0}>
             <img src={imm} alt="" />
           </button>

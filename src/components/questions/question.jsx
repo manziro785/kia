@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import './question.css'; // Убедитесь, что этот файл существует и содержит необходимые стили
+import logo from '../../assets/header/llogo.svg';
+
+import f1 from "../../assets/org/Link.svg"
+import f2 from "../../assets/org/Link (1).svg"
+import f3 from "../../assets/org/Link (2).svg"
+import f4 from "../../assets/org/Container.svg"
+
 
 const questions = [
     { question: 'Что такое KIA Cyberchamp?', answer: 'KIA Cyberchamp - это киберспортивный турнир, организованный компанией KIA. В нем участвуют команды, соревнующиеся в различных популярных киберспортивных дисциплинах. Этот турнир проводится впервые и собирает команды со всего Бишкека.' },
@@ -11,6 +18,10 @@ const questions = [
     { question: 'Где мне связаться с вами?', answer: 'Вы можете связаться с нами написав нам на почту kiacyberchamp@gmail.com.' },
 ];
 
+
+
+
+
 const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
@@ -20,7 +31,7 @@ const FAQ = () => {
 
     return (
         <div className="faq-container">
-            <div className="background-image"></div>
+            <div className="background-image" style={{backgroundImage: 'url{}'}}></div>
             <div className="overlay"></div>
             <div className="faq-content">
                 <h1 className="faq-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h1>
@@ -37,17 +48,19 @@ const FAQ = () => {
                     ))}
                 </div>
                 <footer className="footer">
-                    <img src="/src/assets/org/KIA_back.svg" alt="Footer" className="footer-image" />
+                    <img src={logo} alt="Footer" className="footer-image" />
                     <div className="social-icons">
-                        <img src="/src/assets/org/Link.svg" alt="Facebook" />
-                        <img src="/src/assets/org/Link (1).svg" alt="YouTube" />
-                        <img src="/src/assets/org/Link (2).svg" alt="Instagram" />
+                        <img src={f1} alt="Facebook" />
+                        <img src={f2} alt="YouTube" />
+                        <img src={f3} alt="Instagram" />
                     </div>
                 </footer>
             </div>
-            <img src="/src/assets/org/Container.svg" alt="FAQ" className="faq-image" />
+            <img src={f4} alt="FAQ" className="faq-image" />
         </div>
     );
 };
+
+
 
 export default FAQ;

@@ -8,33 +8,37 @@
     background-color: #0000008e;
 }
 
+main {
+    box-sizing: border-box;
+}
+
 .header-logo {
-    width: 10px;
+    width: 120px;
     height: 50px;
     margin-top: 10px;
+}
 
-}
 .header-logo img {
- width: 120px;
+    width: 100%;
 }
+
 .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 50px; /* Сократите padding для маленьких экранов */
     width: 100%;
 }
 
 .header-nav {
     display: flex;
-    font-family: Montserrat;
-font-size: 14px;
-font-weight: 500;
-margin-right: 200px;
-line-height: 20px;
-letter-spacing: 0.4000000059604645px;
-text-align: left;
-
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    display: none;
 }
 
 .header-list {
@@ -44,37 +48,22 @@ text-align: left;
     padding: 0;
 }
 
-.header-item-1{
-    width: 188px;
-height: 20px;
-margin-right: 41px;
-}
-
-.header-item-2{
-    width: 86px;
-height: 21px;
-margin-right: 41px;
-}
-.header-item-3{
-    width: 104px;
-height: 20px;
-margin-right: 41px;
-display: flex;
-flex-direction: row;
+.header-item-1,
+.header-item-2,
+.header-item-3,
+.header-item-4 {
+    margin-right: 20px; /* Сократите margin для маленьких экранов */
 }
 
 .header-link {
     font-size: 14px;
     color: white;
     text-decoration: none;
-}
-.header-link {
     position: relative;
-    text-decoration: none;
-    color: white;
 }
 
-.header-link::before, .header-link::after {
+.header-link::before, 
+.header-link::after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -92,12 +81,34 @@ flex-direction: row;
     right: 50%;
 }
 
-.header-link:hover::before, .header-link:hover::after {
+.header-link:hover::before, 
+.header-link:hover::after {
     width: 50%;
 }
 
-/* Intro style */
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .header-wrapper {
+        padding: 0 10px;
+    }
 
+    .header-item-1,
+    .header-item-2,
+    .header-item-3,
+    .header-item-4 {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        width: 100px;
+    }
+
+    .header-nav {
+        display: none; /* Скрыть навигацию на маленьких экранах */
+    }
+}
 
 
 .big-logo {
@@ -125,33 +136,57 @@ z-index: 3;
 }
 
 .ovv {
-        background-image: url('./src/assets/car/Frame 3.svg') ;
         background-size: cover; /* Позволяет изображению занимать всю доступную область */
         background-position: center; /* Центрирует изображение на фоне */
-        position: absolute; /* Позиционируем абсолютно внутри родителя .wrapp-car */
         top: 0;
         left: 0;
         background-repeat: no-repeat;
-        width: 240vh;
-        height: 100vh;
+        height: 50vh;
         z-index: 2; /* Помещаем фоновое изображение позади других элементов */
      padding-bottom: 120px;
      
     
 
 }
+.ovvs {
+    background-size: cover; /* Позволяет изображению занимать всю доступную область */
+    background-position: center; /* Центрирует изображение на фоне */
+    top: 0;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    height: auto;
+    z-index: 2; /* Помещаем фоновое изображение позади других элементов */
+ padding-bottom: 2px;
+ 
+
+
+}
+
+.ovvs img {
+    width: 240vh;
+    opacity: 0.45;
+
+}
+
 .tt{
     z-index: 10;
     position: relative;
     width: 500px;
     display: flex;
     justify-content: center;
-    width: 200vh;
     align-items:center;
     height: 100vh;
+    width: 100%;
     
     }
     .tt img{
         width: 1200px;
         
+        }
+
+        @media (max-width: 1300px) {
+            .tt img {
+                width: 70%;
+            }
         }

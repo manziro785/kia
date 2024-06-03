@@ -8,6 +8,7 @@ import img3 from '../../assets/calendar/14.svg';
 import img4 from '../../assets/calendar/Group - 1.svg';
 import img5 from '../../assets/calendar/Group2.svg';
 import img6 from '../../assets/calendar/Group3.svg';
+import bd from '../../assets/calendar/calendar.svg'
 
 
 
@@ -126,7 +127,7 @@ export default function Calendar() {
   return (
     <>
     <div className="wrapp-main">
-    <div className="wrapper-calen">
+    <div className="wrapper-calen" >
     <div className="events-calendar">
       <div className="calendar-header">
         <h1>КАЛЕНДАРЬ СОБЫТИЙ</h1>
@@ -172,6 +173,8 @@ export default function Calendar() {
     </div></div>
     <div className= 'photo-container1' >
       <img src="./src/assets/calendar/scorpion 1.svg" alt="Your Photo" className="scroll-photo" />
+    </div>
+    <div className="ovv">
     </div>
     </div>
     </div>

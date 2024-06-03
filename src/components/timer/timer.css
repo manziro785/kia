@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh; /* Центрирование по вертикали */
+    height: 80vh; /* Центрирование по вертикали */
     flex-direction: column; /* Направление flex-контейнера на столбец */
  z-index: 10;
  position: relative;
@@ -72,4 +72,38 @@
   
   .time-unit-n {
     font-size: 73px; /* Размер шрифта для единиц времени */
+  }
+
+
+  @media (max-width: 950px) {
+    .container-n {
+      transform: scale(0.8);
+    }
+  }
+
+  @media (max-width: 760px) {
+    .container-n {
+      transform: scale(0.6);
+    }
+  }
+
+  @media (max-width: 760px) {
+    .container-n {
+      transform: scale(0.5);
+      margin-top: -200px;
+    }
+    .calendar-header h1 {
+      display: none;
+    }
+  }
+  @media (max-width: 460px) {
+    .container-n {
+      transform: scale(0.4);
+    }
+  }
+
+  @media (max-width: 350px) {
+    .container-n {
+      transform: scale(0.3);
+    }
   }

@@ -2,7 +2,7 @@
     position: relative;
     text-align: center;
     padding: 20px;
-    height: 100vh;
+    height: 130vh;
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -94,18 +94,26 @@
 
 @media (max-width: 768px) {
     .games {
-        flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .game-card {
-        width: 80%;
+        width: 50%;
         margin-bottom: 10px; /* Add some spacing between cards */
     }
 
     .content-layer h2 {
         font-size: 2.2em; /* Adjust the font size for smaller screens */
     }
+    .game-section {
+        margin-top: 0;
+    
+
+        height: 220vh;
+
+    }
+    
 }
 
 @media (max-width: 480px) {
