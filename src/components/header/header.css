@@ -6,7 +6,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     background-color: #0000008e;
     z-index: 12;
 }

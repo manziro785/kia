@@ -1,18 +1,20 @@
 import React from 'react';
 import './banner.css';
 import Header from '../header/header';
-import dd from '../../assets/car/0.svg';
+import dd from '../../assets/car/Kia tittle.svg';
+import Timer from '../timer/timer'
 
 export default function Banner() {
   return (
     <div>
       <Header/>
-      <main>
-        <div className="title-mm"></div>
+      <main className='banner'>
+        {/* <div className="title-mm"></div> */}
         <div className='tt'><img src={dd} alt="" /></div>
-        <div className="intro">
-          <div className="big-logo"></div>
-        </div>
+        {/* <div className="intro"> */}
+          {/* <div className="big-logo"></div> */}
+        {/* </div> */}
+            <Timer/>
       </main>
     </div>
   );

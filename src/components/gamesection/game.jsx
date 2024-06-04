@@ -11,7 +11,8 @@ const GameSection = () => {
             <div className="gradient-overlay"></div>
             <div className="content-layer">
                 <h2>Игровые дисциплины</h2>
-                <div className="games">
+                <div className="game-content">
+                    <div className="game-cards">
                     <div className="game-card">
                         <img src={cs2} alt="Counter Strike 2" />
                         <a href="/register" className="participate-button">Участвовать</a>
@@ -24,7 +25,11 @@ const GameSection = () => {
                         <img src={dota} alt="Dota 2" />
                         <a href="/register" className="participate-button">Участвовать</a>
                     </div>
+                    </div>
                 </div>
+                {/* <div className="games">
+                    
+                </div> */}
             </div>
         </div>
     </div>    );

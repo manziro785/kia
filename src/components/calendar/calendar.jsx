@@ -175,9 +175,9 @@ export default function Calendar() {
       <img src="./src/assets/calendar/btn-r.svg" alt="" />
           </button>
     </div></div>
-    <div className= 'photo-container1' >
+    {/* <div className= 'photo-container1' >
       <img src={sc} alt="Your Photo" className="scroll-photo" />
-    </div>
+    </div> */}
     <div className="ovv">
     </div>
     </div>

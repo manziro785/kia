@@ -8,9 +8,11 @@
     background-color: #0000008e;
 }
 
-main {
+.banner{
     box-sizing: border-box;
-    padding-top: 60px; /* Added padding to prevent content overlap with fixed header */
+    width: 100wh;
+    background-image: url(/src/assets/asiamall\ beck.svg);
+
 }
 
 .header-logo {

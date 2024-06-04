@@ -18,8 +18,8 @@ export default function MainPage() {
   return (
     <>
     <Banner/>
-    <Timer/>
-    <Calendar/>
+
+    {/* <Calendar/> */}
     <Car/>
     {/* <Num/> */}
     <GameSection/>
