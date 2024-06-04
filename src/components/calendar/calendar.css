@@ -1,38 +1,39 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-    height: 100vh;
-    margin: 0;
-    overflow-x: hidden;
-    padding: 0;
-  }
-  .wrapp-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+.wrapp-main {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.wrapper-calen {
+  /* width: 130%; */
+}
+.events-calendar {
+  width: 100%;
+  /* max-width: 1200px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  }
-  .wrapper-calen {
-    width: 130%;
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: fit-content;
+}
 
-  }
-  .events-calendar {
-    width: 100%;
-    /* max-width: 1200px; */
-    text-align: center;
-  }
-  
-  .calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    width: fit-content;
-  }
-  
-  /* .navigation button {
+/* .navigation button {
     background-color: #ff4081;
     border: none;
     color: #fff;
@@ -40,12 +41,12 @@ body {
     cursor: pointer;
     font-size: 16px;
   } */
-  .wrapper-calen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* .navigation button:disabled {
+.wrapper-calen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .navigation button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   } */
@@ -60,12 +61,12 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
-  .wrap-cal, .wrap-call, .wrap-cal1 {
+  .wrap-cal, .wrap-call {
     display: flex;
     width: fit-content;
   }
   
-  .event, .event1 {
+  .event {
     max-width: 100%; /* Display one event per slide */
     padding: 0px;
     box-sizing: border-box;
@@ -78,9 +79,7 @@ body {
   }
   
   .event h2,
-  .event p,
-  .event1 h2,
-  .event1 p {
+  .event p {
     margin: 0;
     padding: 5px 0;
   }
@@ -89,82 +88,79 @@ body {
     
     padding: 0 5px;
 }
-.event1 img {
-  height: 500px;
-  
-  padding: 0 5px;
-}
-.event div, .event1 div  {
+.event div  {
     /* width: 100%; */
     width: fit-content;
     
 }
-.wrap-cal button, .wrap-call button, .wrap-cal1 button {
+.wrap-cal button, .wrap-call button {
 background: none;
 border: none;
 padding: 0;
 transition: all 0.4s ease;
 
 }
-.wrap-cal button:hover, .wrap-cal button:hover {
-    transform: scale(1.2);
-    
-    }
-.wrap-cal, .wrap-call {
-    width: 103%;
+.wrap-cal button:hover,
+.wrap-cal button:hover {
+  transform: scale(1.2);
 }
+/* .wrap-cal,
+.wrap-call {
+  width: 73%;
+} */
 .wrapp-main {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 .calendar-header h1 {
-    font-size: 40px;
-    margin-left: 30px;
+  font-size: 40px;
+  margin-left: 30px;
 }
 
 .wrapper-calen {
-  background-position:center;
-      
-
+  background-position: center;
+  height: 50rem;
 }
 
-.wrapper-calen::before {
-     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #2B1028, #5e2357b9, #2B1028); /* Purple color with 50% opacity */
-    pointer-events: none;
-    z-index: 1;
-  } 
+/* .wrapper-calen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #2b1028,
+    #5e2357b9,
+    #2b1028
+  ); 
 
+  pointer-events: none;
+  z-index: 1;
+} */
 
-  .wrapper-calen > * {
-    position: relative;
-    z-index: 2;
-  }
-  .photo-container1 {
-    position: absolute;
-    left:-1500px;
-    margin-top: 70px;
-    transition: left 1.2s ease-in-out; /* Плавное изменение свойства left */
-  }
-  
-  .photo-container1.show {
-    left:0;
+.wrapper-calen > * {
+  position: relative;
+  z-index: 2;
+}
+.photo-container1 {
+  position: absolute;
+  left: -1500px;
+  margin-top: 70px;
+  transition: left 1.2s ease-in-out; /* Плавное изменение свойства left */
+}
 
-  }
+.photo-container1.show {
+  left: 0;
+}
 .photo-container1 img {
-    width: 900px;
-    margin-top: 200px;
-    z-index: 1;
-
+  width: 900px;
+  margin-top: 200px;
+  z-index: 1;
 }
 .events-calendar {
-    z-index: 10;
-    width: fit-content;
-
+  z-index: 10;
+  width: fit-content;
 }
 
 @media (max-width: 1500px) {
@@ -185,7 +181,6 @@ transition: all 0.4s ease;
   }
   .photo-container1 {
     transform: scale(0.9);
-
   }
 }
 
@@ -195,7 +190,6 @@ transition: all 0.4s ease;
   }
   .photo-container1 {
     transform: scale(0.8);
-
   }
   .calendar-header {
     margin-top: 50px;
@@ -208,16 +202,14 @@ transition: all 0.4s ease;
   }
   .photo-container1 {
     transform: scale(0.6);
-    left:-2000px;
-
+    left: -2000px;
   }
   .calendar-header {
     margin-top: 200px !important;
     margin-bottom: 0 !important;
   }
   .photo-container1.show {
-    left:-120px;
-
+    left: -120px;
   }
 }
 
@@ -230,12 +222,6 @@ transition: all 0.4s ease;
     left:-2000px;
 
   }
-  .event1 img {
-    height: 1000px;
-  }
-  .event1  {
-    width: 100%;
-  }
   .wrap-call {
     margin-top: 130px !important;
   }
@@ -243,11 +229,10 @@ transition: all 0.4s ease;
     display: none;
   }
   .wrapper-calen {
-    margin-top: -400px;
+    height: 30rem;
   }
   .photo-container1.show {
-    left:-200px;
-
+    left: -200px;
   }
   
 }
@@ -257,11 +242,21 @@ transition: all 0.4s ease;
   }
   .photo-container1 {
     transform: scale(0.4);
-    left:-2000px;
-
+    left: -2000px;
   }
   .photo-container1.show {
-    left:-240px;
-
+    left: -240px;
+  }
+}
+@media (max-width: 375px) {
+  .events-calendar {
+    transform: scale(0.27);
+  }
+  .photo-container1 {
+    transform: scale(0.4);
+    left: -2000px;
+  }
+  .photo-container1.show {
+    left: -240px;
   }
 }
