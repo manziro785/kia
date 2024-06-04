@@ -20,7 +20,7 @@
     font-family: Montserrat;
     font-size: 68px;
     font-weight: 700;
-    line-height: 42.24px;
+    /* line-height: 42.24px; */
     text-align: left;
     margin-bottom: 100px; /* Отступ вниз */
   }
@@ -81,9 +81,7 @@
     .container-n {
       transform: scale(0.8);
     }
-    .content-n{
-      font-size: 50px;
-    }
+
   }
 
   @media (max-width: 760px) {
