@@ -1,129 +1,121 @@
 .title-car {
-    display: flex;
-    justify-content: center;
-    /* margin-top: 100px; */
-    /* padding-top: px; */
-
+  display: flex;
+  justify-content: center;
+  /* margin-top: 100px; */
+  /* padding-top: px; */
 }
-.coneiner-car{
+.coneiner-car {
   padding: 60px;
 }
-.wrapp-car{
+.wrapp-car {
   background-image: url(/src/assets/car\ back.svg);
   background-repeat: no-repeat;
   width: 100vw;
-
+  background-position: center;
 }
-.car-img img{
+.car-img img {
   width: 100%;
 }
 .title-car img {
   width: 80%;
-    
 }
-.car-content{
+.car-content {
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
 }
-.car-text{
+.car-text {
   width: 60%;
 }
 .car-text div {
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 20px;
-} 
-
+}
 
 .info-car {
   width: 100%;
 }
 
 .text-car {
-    padding-left: 60px;
-    margin-top: 70px;
-
+  padding-left: 60px;
+  margin-top: 70px;
 }
 
+.photo-container2 img {
+  width: 100%;
+}
 
- 
-  
-  .photo-container2 img {
+@media (max-width: 1100px) {
+  .car-text div {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .car-img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .car-text div {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .car-text {
     width: 100%;
-    
   }
-  
-  @media (max-width: 1100px) {
-    .car-text div {
-      font-size: 12px;
-      color: #FFFFFF;
-      font-weight: 700;
-      margin-bottom: 16px;
-    } 
-    .car-img{
-      width: 50%;
-    }
+  .car-img {
+    width: 100%;
   }
-  @media (max-width: 768px) {
-    .car-text div {
-      font-size: 16px;
-      color: #FFFFFF;
-      font-weight: 700;
-      margin-bottom: 10px;
-    } 
-    .car-text{
-      width: 100%;
-    }
-    .car-img{
-      width: 100%;
-    }
-    .car-content{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 50px;
-    }
+  .car-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
   }
+}
 
-  @media (max-width: 485px) {
-    .car-text div {
-      font-size: 12px;
-      color: #FFFFFF;
-      font-weight: 700;
-      margin-bottom: 6px;
-    } 
-    .car-text{
-      width: 100%;
-    }
-    .car-img{
-      width: 100%;
-    }
-    .car-content{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 50px;
-    }
+@media (max-width: 485px) {
+  .car-text div {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 6px;
   }
-  @media (max-width: 485px) {
-    .car-text div {
-      font-size: 8px;
-      color: #FFFFFF;
-      font-weight: 700;
-      margin-bottom: 4px;
-    } 
-    .car-text{
-      width: 100%;
-    }
-    .car-img{
-      width: 100%;
-    }
-    .car-content{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 50px;
-    }
+  .car-text {
+    width: 100%;
   }
+  .car-img {
+    width: 100%;
+  }
+  .car-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 485px) {
+  .car-text div {
+    font-size: 8px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .car-text {
+    width: 100%;
+  }
+  .car-img {
+    width: 100%;
+  }
+  .car-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+}

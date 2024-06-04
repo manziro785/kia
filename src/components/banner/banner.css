@@ -1,204 +1,208 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    z-index: 13;
-    background-color: #0000008e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 13;
+  background-color: #0000008e;
 }
 
-.banner{
-    box-sizing: border-box;
-    width: 100wh;
-    background-image: url(/src/assets/asiamall\ beck.svg);
-
+.banner {
+  box-sizing: border-box;
+  width: 100wh;
+  background-image: url(/src/assets/asiamall\ beck.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .header-logo {
-    width: 120px;
-    height: 50px;
-    margin-top: 10px;
+  width: 120px;
+  height: 50px;
+  margin-top: 10px;
 }
 
 .header-logo img {
-    width: 100%;
+  width: 100%;
 }
 
 .header-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  width: 100%;
 }
 
 .header-nav {
-    display: flex;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0.4px;
-    text-align: left;
-    display: none; /* Hidden by default, will be shown in larger screens */
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  display: none; /* Hidden by default, will be shown in larger screens */
 }
 
 .header-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header-item-1,
 .header-item-2,
 .header-item-3,
 .header-item-4 {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .header-link {
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-    position: relative;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  position: relative;
 }
 
-.header-link::before, 
+.header-link::before,
 .header-link::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    width: 0;
-    height: 2px;
-    background-color: purple;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background-color: purple;
+  transition: width 0.3s ease;
 }
 
 .header-link::before {
-    left: 50%;
+  left: 50%;
 }
 
 .header-link::after {
-    right: 50%;
+  right: 50%;
 }
 
-.header-link:hover::before, 
+.header-link:hover::before,
 .header-link:hover::after {
-    width: 50%;
+  width: 50%;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .header-wrapper {
-        padding: 0 10px;
-    }
+  .header-wrapper {
+    padding: 0 10px;
+  }
 
-    .header-item-1,
-    .header-item-2,
-    .header-item-3,
-    .header-item-4 {
-        margin-right: 10px;
-    }
+  .header-item-1,
+  .header-item-2,
+  .header-item-3,
+  .header-item-4 {
+    margin-right: 10px;
+  }
 
-    .header-nav {
-        display: flex;
-    }
+  .header-nav {
+    display: flex;
+  }
 
-    .header-nav .header-link {
-        font-size: 12px;
-    }
+  .header-nav .header-link {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
-    .header-logo {
-        width: 100px;
-    }
+  .header-logo {
+    width: 100px;
+  }
 
-    .header-nav {
-        display: none;
-    }
+  .header-nav {
+    display: none;
+  }
 }
 
 .big-logo {
-    position: relative;
-    top: 70px;
+  position: relative;
+  top: 70px;
 }
 
 .big-logo img {
-    width: 100%;
+  width: 100%;
 }
 
 .video {
-    width: 100%;
-    max-width: 710px;
-    height: auto;
-    background-color: black;
-    outline: 3px solid #BE2858;
-    position: relative;
-    z-index: 3;
+  width: 100%;
+  max-width: 710px;
+  height: auto;
+  background-color: black;
+  outline: 3px solid #be2858;
+  position: relative;
+  z-index: 3;
 }
 
 .video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .ovv {
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    height: 50vh;
-    z-index: 2;
-    padding-bottom: 120px;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  height: 50vh;
+  z-index: 2;
+  padding-bottom: 120px;
 }
 
 .ovvs {
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    position: absolute;
-    left: 0;
-    background-repeat: no-repeat;
-    height: auto;
-    z-index: 2;
-    padding-bottom: 2px;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  height: auto;
+  z-index: 2;
+  padding-bottom: 2px;
 }
 
 .ovvs img {
-    width: 100%;
-    max-width: 240vh;
-    opacity: 0.45;
+  width: 100%;
+  max-width: 240vh;
+  opacity: 0.45;
 }
 
 .tt {
-    z-index: 10;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .tt img {
-    width: 100%;
-    max-width: 1200px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 @media (max-width: 1300px) {
-    .tt img {
-        width: 70%;
-    }
+  .tt img {
+    width: 70%;
+  }
 }
 
 @media (max-width: 768px) {
-    .tt img {
-        width: 100%;
-        max-width: 100%;
-    }
+  .tt img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .tt {
+    height: 40vh;
+  }
 }
