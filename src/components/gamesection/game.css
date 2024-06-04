@@ -2,7 +2,6 @@
   position: relative;
   text-align: center;
   padding: 60px;
-  height: 130vh;
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -66,21 +65,11 @@
   margin-top: 110px;
   margin: 0 auto;
 }
-
-.game-card {
-  /* position: relative; */
-  /* width: 28%; */
-  transition: transform 0.3s, filter 0.3s;
-  border-radius: 15px;
-
-  overflow: hidden; /* Ensure the border-radius applies to the img */
+.gameCards {
+  padding: 1rem 2rem;
 }
-
-.game-card img {
-  width: 80%;
-  /* height: auto;  */
-  /* object-fit: cover; 
-    display: block; */
+.game-card {
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .game-card:hover {
@@ -89,7 +78,7 @@
 }
 
 .participate-button {
-  width: 10rem;
+  width: 5rem;
   position: absolute;
   top: 66%;
   margin-left: auto;
@@ -103,7 +92,7 @@
   display: none;
   font-weight: bold;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .game-card:hover .participate-button {
@@ -183,10 +172,6 @@
 }
 
 @media (max-width: 500px) {
-  .game-card {
-    /* width: 60%;
-        margin-bottom: 10px; */
-  }
   /* .background-layer {
      
         height: fit-content;
@@ -224,11 +209,6 @@
 }
 
 @media (max-width: 360px) {
-  .game-card {
-    /* width: 100%;
-        margin-bottom: 10px;  */
-  }
-
   .content-layer h2 {
     font-size: 20px; /* Adjust the font size for smallest screens */
   }
