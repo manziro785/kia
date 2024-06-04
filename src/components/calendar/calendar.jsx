@@ -69,7 +69,7 @@ const events = [
 ];
 
 export default function Calendar() {
-  const itemsPerPage = 6; // Number of items to display per page
+  const itemsPerPage = 1; // Number of items to display per page
   const totalPages = Math.ceil(events.length / itemsPerPage);
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -183,6 +183,76 @@ export default function Calendar() {
     </div>
     </div>
 
+
+
+    <div className="wrapp-main">
+    <div className="wrapper-calen" >
+    <div className="events-calendar">
+      <div className="calendar-header">
+        <h1>КАЛЕНДАРЬ СОБЫТИЙ</h1>
+        <div className="navigation">
+          
+
+        </div>
+      </div>
+
+<div className="wrap-cal1">
+<button onClick={handlePrevClick} disabled={currentPage === 0}>
+            <img src={a1} alt="" />
+          </button>
+      <div className="events-slider-wrapper">
+      
+        <div className="events-slider" style={{ transform: `translateX(${-currentPage * 100}%)` }}>
+           
+            <div className="event1" >
+                <img src={img1} alt="" />
+                <img src={img2} alt="" />
+                {/* <img src={img3} alt="" />
+                <img src={img4} alt="" /> */}
+                {/* <img src={img5} alt="" /> */}
+                {/* <img src={img6} alt="" /> */}
+            </div>
+            <div className="event1" >
+            {/* <img src={img1} alt="" /> */}
+                {/* <img src={img2} alt="" /> */}
+                {/* <img src={img3} alt="" /> */}
+                {/* <img src={img4} alt="" />
+                <img src={img5} alt="" />
+                <img src={img6} alt="" /> */}
+            </div>
+            <div className="event1" >
+                <img src={img1} alt="" />
+                {/* <img src={img2} alt="" />
+                <img src={img3} alt="" />
+                <img src={img4} alt="" /> */}
+                {/* <img src={img5} alt="" /> */}
+                {/* <img src={img6} alt="" /> */}
+            </div>
+            <div className="event1" >
+            {/* <img src={img1} alt="" /> */}
+                {/* <img src={img2} alt="" /> */}
+                {/* <img src={img3} alt="" /> */}
+                {/* <img src={img4} alt="" />
+                <img src={img5} alt="" />
+                <img src={img6} alt="" /> */}
+            </div>
+          
+
+        
+        </div>
+        
+      </div>
+      <button onClick={handleNextClick} disabled={currentPage === totalPages - 1}>
+      <img src="./src/assets/calendar/btn-r.svg" alt="" />
+          </button>
+    </div></div>
+    {/* <div className= 'photo-container1' >
+      <img src={sc} alt="Your Photo" className="scroll-photo" />
+    </div> */}
+    <div className="ovv">
+    </div>
+    </div>
+    </div>
     </>
     
   );

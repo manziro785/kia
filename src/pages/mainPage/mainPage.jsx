@@ -9,6 +9,7 @@ import Watch from '../../components/watch/watch'
 import Partners from '../../components/partners/partner'
 import cs22 from '../../assets/header/Frame 5 (2).svg'
 import FAQ from '../../components/questions/question'
+import Calendar1 from '../../components/corus2/corus2'
 
 
 
@@ -19,7 +20,8 @@ export default function MainPage() {
     <>
     <Banner/>
 
-    {/* <Calendar/> */}
+    <Calendar/>
+    {/* <Calendar1/> */}
     <Car/>
     {/* <Num/> */}
     <GameSection/>

@@ -60,12 +60,12 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
-  .wrap-cal, .wrap-call {
+  .wrap-cal, .wrap-call, .wrap-cal1 {
     display: flex;
     width: fit-content;
   }
   
-  .event {
+  .event, .event1 {
     max-width: 100%; /* Display one event per slide */
     padding: 0px;
     box-sizing: border-box;
@@ -78,7 +78,9 @@ body {
   }
   
   .event h2,
-  .event p {
+  .event p,
+  .event1 h2,
+  .event1 p {
     margin: 0;
     padding: 5px 0;
   }
@@ -87,12 +89,17 @@ body {
     
     padding: 0 5px;
 }
-.event div  {
+.event1 img {
+  height: 500px;
+  
+  padding: 0 5px;
+}
+.event div, .event1 div  {
     /* width: 100%; */
     width: fit-content;
     
 }
-.wrap-cal button, .wrap-call button {
+.wrap-cal button, .wrap-call button, .wrap-cal1 button {
 background: none;
 border: none;
 padding: 0;
@@ -223,8 +230,17 @@ transition: all 0.4s ease;
     left:-2000px;
 
   }
+  .event1 img {
+    height: 1000px;
+  }
+  .event1  {
+    width: 100%;
+  }
   .wrap-call {
     margin-top: 130px !important;
+  }
+  .wrap-cal {
+    display: none;
   }
   .wrapper-calen {
     margin-top: -400px;
@@ -233,6 +249,7 @@ transition: all 0.4s ease;
     left:-200px;
 
   }
+  
 }
 @media (max-width: 560px) {
   .events-calendar {
