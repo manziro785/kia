@@ -1,0 +1,45 @@
+/* ... existing CSS ... */
+
+.header-nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #0000008e;
+    z-index: 12;
+}
+
+.header-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-item {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        padding: 0 10px;
+    }
+
+    .header-item {
+        margin-right: 10px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        width: 100px;
+    }
+}

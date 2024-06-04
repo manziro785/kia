@@ -11,6 +11,10 @@ import img6 from '../../assets/calendar/Group3.svg';
 import bd from '../../assets/calendar/calendar.svg'
 
 
+import sc from '../../assets/calendar/scorpion 1.svg'
+
+
+
 
 const events = [
   {
@@ -149,12 +153,12 @@ export default function Calendar() {
                 <img src={img2} alt="" />
                 <img src={img3} alt="" />
                 <img src={img4} alt="" />
-                <img src={img5} alt="" />
-                <img src={img6} alt="" />
+                {/* <img src={img5} alt="" /> */}
+                {/* <img src={img6} alt="" /> */}
             </div>
             <div className="event" >
-            <img src={img1} alt="" />
-                <img src={img2} alt="" />
+            {/* <img src={img1} alt="" /> */}
+                {/* <img src={img2} alt="" /> */}
                 <img src={img3} alt="" />
                 <img src={img4} alt="" />
                 <img src={img5} alt="" />
@@ -172,7 +176,7 @@ export default function Calendar() {
           </button>
     </div></div>
     <div className= 'photo-container1' >
-      <img src="./src/assets/calendar/scorpion 1.svg" alt="Your Photo" className="scroll-photo" />
+      <img src={sc} alt="Your Photo" className="scroll-photo" />
     </div>
     <div className="ovv">
     </div>

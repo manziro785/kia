@@ -11,10 +11,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
+  }
+  .wrapper-calen {
+    width: 130%;
 
   }
   .events-calendar {
-    width: 50%;
+    width: 100%;
     /* max-width: 1200px; */
     text-align: center;
   }
@@ -24,6 +29,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    width: fit-content;
   }
   
   /* .navigation button {
@@ -46,7 +52,8 @@ body {
   
   .events-slider-wrapper {
     overflow: hidden;
-    width: 100%;
+    width: 1080px;
+
   }
   
   .events-slider {
@@ -55,10 +62,11 @@ body {
   }
   .wrap-cal, .wrap-call {
     display: flex;
+    width: fit-content;
   }
   
   .event {
-    min-width: 100%; /* Display one event per slide */
+    max-width: 100%; /* Display one event per slide */
     padding: 0px;
     box-sizing: border-box;
     background-size: cover;
@@ -148,6 +156,8 @@ transition: all 0.4s ease;
 }
 .events-calendar {
     z-index: 10;
+    width: fit-content;
+
 }
 
 @media (max-width: 1500px) {

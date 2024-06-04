@@ -3,13 +3,17 @@
     text-align: center;
     padding: 20px;
     height: 130vh;
-    margin-top: 100px;
+    margin-top: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
+@media (max-width: 500px) {
+    .game-section {
+}
+}
 .background-layer {
     position: absolute;
     top: 0;
@@ -116,12 +120,38 @@
     
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .game-card {
-        width: 90%;
+        width: 60%;
         margin-bottom: 10px; /* Add some spacing between cards */
     }
+    .background-layer {
+     
+        height: fit-content;
+    }
+    .game-section {
+        height: 120vh;
+    }
+    .watch-title {
+        margin-left: 5px !important;
+        margin-top: 70px;
+        font-size: 23px !important;
 
+    }
+    .watch-title h1 {
+        font-size: 13px !important;
+
+    }
+    .sponsor-item {
+        margin-bottom: 20px;
+    }
+    .faq-title {
+        font-size: 24px !important;
+    }
+.title {
+    font-size: 38px !important;
+    margin-bottom: 20px !important;
+}
     .content-layer h2 {
         font-size: 2em; /* Adjust the font size for smaller screens */
     }

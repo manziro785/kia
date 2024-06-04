@@ -21,15 +21,11 @@ export default function MainPage() {
     <Timer/>
     <Calendar/>
     <Car/>
-    {/* <img src='./src/assets/header/Group 64.svg' style={{width: '210vh', marginTop: '500px'}}></img> */}
-    <Num/>
-    {/* <img src="./src/assets/header/Frame 4.svg"style={{width: '210vh', marginTop: '100px'}} alt="" /> */}
+    {/* <Num/> */}
     <GameSection/>
     <Watch/>
-    {/* <Partners/> */}
     <Partners/>
     <FAQ/>
-    {/* <img src={cs22} style={{width: '210vh', marginTop: '100px'}} alt="" /> */}
 
     </>
   )

@@ -56,7 +56,6 @@ const FAQ = () => {
                     </div>
                 </footer>
             </div>
-            <img src={f4} alt="FAQ" className="faq-image" />
         </div>
     );
 };

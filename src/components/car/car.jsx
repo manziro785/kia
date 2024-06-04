@@ -6,41 +6,6 @@ import d2 from '../../assets/car/kiiia 1.svg'
 
 export default function Car() {
 
-    useEffect(() => {
-        const photoContainers1 = document.querySelectorAll('.car-img');
-        const photoContainers2 = document.querySelectorAll('.photo-container2');
-        // const photoContainers3 = document.querySelectorAll('.photo-container3');
-        
-        const checkBox = (elements) => {
-          const trigger = window.innerHeight / 5 * 4;
-    
-          elements.forEach((element) => {
-            const topOfBox = element.getBoundingClientRect().top;
-    
-            if (topOfBox < trigger) {
-              element.classList.add('show');
-            } else {
-              element.classList.remove('show');
-            }
-          });
-        };
-    
-        const handleScroll = () => {
-          checkBox(photoContainers1);
-          checkBox(photoContainers2);
-        //   checkBox(photoContainers3);
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        // Вызываем handleScroll сразу после загрузки страницы, чтобы определить положение
-        handleScroll();
-        
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-          };
-        }, []);
-    
   return (
     <div>
         
@@ -58,9 +23,9 @@ export default function Car() {
 
                 </div>
             </div>
-            <div className="photo-container2">
-                <img src={d2} alt="" />
-            </div>
+            <div className="photo-container2"> 
+                 <img src={d2} alt="" /> 
+             </div>
         </div>
         
     </div>
