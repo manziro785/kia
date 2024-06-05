@@ -50,13 +50,31 @@ const GameSection = () => {
             >
               <SwiperSlide className="game-card">
                 <img src={cs2} alt="" className="swpimg" />
-                <a href="/register" className="participate-button">
+                <a href="/register-cs" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
                 <img src={dota} alt="" className="swpimg" />
-                <a href="/register" className="participate-button">
+                <a href="/register-dota" className="participate-button">
+                  Участвовать
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="game-card">
+                <img src={pubg} alt="" className="swpimg" />
+                <a href="/register-pubg" className="participate-button">
+                  Участвовать
+                </a>
+              </SwiperSlide>
+              {/* <SwiperSlide className="game-card">
+                <img src={cs2} alt="" className="swpimg" />
+                <a href="/register-cs" className="participate-button">
+                  Участвовать
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="game-card">
+                <img src={dota} alt="" className="swpimg" />
+                <a href="/register-dota" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
@@ -77,25 +95,7 @@ const GameSection = () => {
                 <a href="/register" className="participate-button">
                   Участвовать
                 </a>
-              </SwiperSlide>
-              <SwiperSlide className="game-card">
-                <img src={pubg} alt="" className="swpimg" />
-                <a href="/register" className="participate-button">
-                  Участвовать
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="game-card">
-                <img src={cs2} alt="" className="swpimg" />
-                <a href="/register" className="participate-button">
-                  Участвовать
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="game-card">
-                <img src={dota} alt="" className="swpimg" />
-                <a href="/register" className="participate-button">
-                  Участвовать
-                </a>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <Btnswp />
             </Swiper>
             <a href="/register" className="participate-button">
