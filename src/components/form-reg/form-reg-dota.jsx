@@ -78,10 +78,7 @@ export default function Formregdota() {
     </div>
 
     <div className="navbar" onClick={handleRedirect}>
-        <div>общая информация</div>
-        <div>смотреть</div>
-
-        <div>участники</div>
+        
         <div>cвязаться с нами</div>
 
 

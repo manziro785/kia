@@ -3,8 +3,8 @@ import "./calendar.css";
 import a1 from "../../assets/calendar/Vector (2).svg";
 import img1 from "../../assets/calendar/17.svg";
 
-import img2 from "../../assets/calendar/16.svg";
-import img3 from "../../assets/calendar/14.svg";
+import img2 from "../../assets/calendar/imgdota.svg";
+import img3 from "../../assets/calendar/imgpubg.svg";
 import img4 from "../../assets/calendar/Group - 1.svg";
 import img5 from "../../assets/calendar/Group2.svg";
 import img6 from "../../assets/calendar/Group3.svg";

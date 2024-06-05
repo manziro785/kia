@@ -78,10 +78,10 @@ export default function Regcs() {
     </div>
 
     <div className="navbar" onClick={handleRedirect}>
-        <div>общая информация</div>
+        {/* <div>общая информация</div>
         <div>смотреть</div>
 
-        <div>участники</div>
+        <div>участники</div> */}
         <div>cвязаться с нами</div>
 
 
@@ -201,9 +201,12 @@ export default function Regcs() {
                   onChange={handleChange}
                 />
                 {errors.email && <span className="error">{errors.email}</span>}
+              
               </div>
+              
             </div>
           </div>
+          
           
         </form>
         </div>
