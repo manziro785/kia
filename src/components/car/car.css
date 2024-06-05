@@ -5,7 +5,8 @@
   /* padding-top: px; */
 }
 .coneiner-car {
-  padding: 60px 0;
+  padding: 60px;
+  margin-top: 50px;
 }
 .wrapp-car {
   /* background-image: url(/src/assets/car\ back.svg); */

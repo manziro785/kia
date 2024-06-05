@@ -48,14 +48,14 @@ const FAQ = () => {
                         </div>
                     ))}
                 </div>
-                <footer className="footer">
+                {/* <footer className="footer">
                     <img src={logo} alt="Footer" className="footer-image" />
                     <div className="social-icons">
                         <img src={f1} alt="Facebook" />
                         <img src={f2} alt="YouTube" />
                         <img src={f3} alt="Instagram" />
                     </div>
-                </footer>
+                </footer> */}
             </div>
         </div>
     );

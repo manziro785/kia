@@ -1,13 +1,14 @@
 import { React, useState, useEffect } from "react";
 import "./calendar.css";
 import a1 from "../../assets/calendar/Vector (2).svg";
-import img1 from "../../assets/calendar/17.svg";
 
-import img2 from "../../assets/calendar/imgdota.svg";
-import img3 from "../../assets/calendar/imgpubg.svg";
-import img4 from "../../assets/calendar/Group - 1.svg";
-import img5 from "../../assets/calendar/Group2.svg";
-import img6 from "../../assets/calendar/Group3.svg";
+import img1 from "../../assets/calendar/img-pubg.svg";
+import img2 from "../../assets/calendar/img-dota.svg";
+import img3 from "../../assets/calendar/img-pubg2.svg";
+import img4 from "../../assets/calendar/img-dota2.svg";
+import img5 from "../../assets/calendar/img-pubg3.svg";
+import img6 from "../../assets/calendar/img-dota3.svg";
+
 import bd from "../../assets/calendar/calendar.svg";
 
 import sc from "../../assets/calendar/scorpion 1.svg";
@@ -107,37 +108,37 @@ export default function Calendar() {
             className="calenSwiper"
           >
             <SwiperSlide>
-              <img src={img2} alt="" className="swpimg" />
+              <img src={img1} alt="" className="swpimg" />
             </SwiperSlide>
             <SwiperSlide>
               <img src={img2} alt="" className="swpimg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img2} alt="" className="swpimg" />
+              <img src={img3} alt="" className="swpimg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img4} alt="" className="swpimg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img5} alt="" className="swpimg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img6} alt="" className="swpimg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img1} alt="" className="swpimg" />
             </SwiperSlide>
             <SwiperSlide>
               <img src={img2} alt="" className="swpimg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img2} alt="" className="swpimg" />
+              <img src={img3} alt="" className="swpimg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img2} alt="" className="swpimg" />
+              <img src={img4} alt="" className="swpimg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img2} alt="" className="swpimg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img2} alt="" className="swpimg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img2} alt="" className="swpimg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img2} alt="" className="swpimg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img2} alt="" className="swpimg" />
+              <img src={img5} alt="" className="swpimg" />
             </SwiperSlide>
             <Btnswp />
           </Swiper>

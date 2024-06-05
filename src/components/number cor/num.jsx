@@ -62,7 +62,7 @@ const events = [
   // Add more events as needed
 ];
 
-export default function Num() {
+function Num() {
   return (
     <>
       <div className="containerr">
@@ -120,3 +120,5 @@ export default function Num() {
     </>
   );
 }
+
+export default Num;

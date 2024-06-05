@@ -21,7 +21,7 @@
     justify-content: space-between;
   }
 
-  @media (max-width: 1243px) {
+  @media (max-width: 1293px) {
     .wrap-game-sec2 {
 display: none;
 
@@ -176,7 +176,7 @@ display: none;
     .game-section {
       margin-top: 0;
   
-      height: 80vh;
+      height: 70vh;
     }
     .game-card {
       width: 70%;
