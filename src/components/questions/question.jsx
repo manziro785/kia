@@ -7,6 +7,7 @@ import f2 from "../../assets/org/Link (1).svg"
 import f3 from "../../assets/org/Link (2).svg"
 import f4 from "../../assets/org/Container.svg"
 
+import bgq from '../../assets/banner/bgquest.svg'
 
 const questions = [
     { question: 'Что такое KIA Cyberchamp?', answer: 'KIA Cyberchamp - это киберспортивный турнир, организованный компанией KIA. В нем участвуют команды, соревнующиеся в различных популярных киберспортивных дисциплинах. Этот турнир проводится впервые и собирает команды со всего Бишкека.' },
@@ -31,7 +32,7 @@ const FAQ = () => {
 
     return (
         <div className="faq-container">
-            <div className="background-image" style={{backgroundImage: 'url{}'}}></div>
+            <div className="background-image" style={{ backgroundImage: `url(${bgq})`}}></div>
             <div className="overlay"></div>
             <div className="faq-content">
                 <h1 className="faq-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h1>

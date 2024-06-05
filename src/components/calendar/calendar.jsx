@@ -120,9 +120,12 @@ export default function Calendar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
 
   return (
     <>
+
+   
       <div className="wrapp-main">
         <div className="wrapper-calen">
           <div className="events-calendar">
@@ -148,10 +151,12 @@ export default function Calendar() {
                     {/* <img src={img6} alt="" /> */}
                   </div>
                   <div className="event">
+                  <img src={img1} alt="" />
+                    <img src={img2} alt="" />
                     <img src={img3} alt="" />
                     <img src={img4} alt="" />
                     <img src={img5} alt="" />
-                    <img src={img6} alt="" />
+                    {/* <img src={img6} alt="" /> */}
                   </div>
                 </div>
               </div>

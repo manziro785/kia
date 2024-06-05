@@ -8,7 +8,7 @@
   padding: 60px;
 }
 .wrapp-car {
-  background-image: url(/src/assets/car\ back.svg);
+  /* background-image: url(/src/assets/car\ back.svg); */
   background-repeat: no-repeat;
   width: 100vw;
   background-position: center;

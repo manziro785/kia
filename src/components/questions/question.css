@@ -10,7 +10,7 @@
 }
 
 .background-image {
-    background-image: url('../../assets/car/MLBB.jpg'); /* Замените на ваш путь к картинке */
+    background-image: url('../../assets/banner/bgquest.svg'); /* Замените на ваш путь к картинке */
     position: absolute;
     top: 0;
     left: 0;

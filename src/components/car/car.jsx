@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './car.css'
 import d1 from '../../assets/car/Frame 1 (1).svg'
 import d2 from '../../assets/car/kiiia 1.svg'
+import bgcar from '../../assets/car back.svg'
 
 
 export default function Car() {
@@ -9,7 +10,7 @@ export default function Car() {
   return (
     <div>
         
-        <div className="wrapp-car">
+        <div className="wrapp-car" style={{ backgroundImage: `url(${bgcar})`}}>
           <div className="coneiner-car">
           <div className="title-car">
 <img src={d1} alt="" />
