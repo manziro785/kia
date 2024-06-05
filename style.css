@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    margin-right: -20px; /* Отрицательный отступ для компенсации между контейнерами */
+    overflow-x: scroll; /* Запретить горизонтальную прокрутку */
+            width: 100%; /* Ширина контейнера для трех вложенных контейнеров */
+            transition: transform 0.3s ease; /* Плавное перемещение */
+            scroll-snap-type: x mandatory; /* Отображение элементов в виде точек привязки */
+            scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container,
+        .container-2,
+        .container-3 {
+            width: 100vw; /* Ширина контейнера равна ширине видимой части окна браузера */
+            height: 100vh; /* Высота контейнера равна высоте окна браузера */
+            flex-shrink: 0; /* Запрет на сжатие контейнеров */
+            scroll-snap-align: start; /* Выравнивание контейнеров по левому краю */
+            margin-right: -10px;
+        }
+
+        .container.active,
+        .container-2.active,
+        .container-3.active {
+            opacity: 1;
+        }
+
+
+
+.header {
+    margin-left: 112px;
+    margin-top: 40px;
+    font-size: 70px;
+}
+
+.content {
+    margin-top: 110px;
+    margin-left: 112px;
+}
+
+.million {
+    font-size: 100px;
+}
+
+.info {
+    font-size: 60px;
+}
+
+.imh {
+    margin-top: 100px;
+    margin-right: 60px;
+    height: 430px;
+}
+
+.red {
+    color: red;
+}
+.container {
+    background: url(/svg/Phone.svg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.container-2 {
+    background: url(/svg/Phone.svg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+}
+
+.container-2 {
+    background: url(/svg/Phone.svg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+}
+
+.content-2 {
+    margin-top: 260px;
+    margin-left: 148px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 85px;
+    font-weight: 600;
+}
+
+.info-2 {
+    font-size: 44px;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+}
+
+.img-2 {
+    margin-top: 75px;
+    margin-right: 130px;
+}
+
+.red-2 {
+    font-size: 100px;
+    color: red;
+    margin-right: 30px;
+    font-weight: 800;
+}
+
+.container-3 {
+    background: url(/svg/Phone.svg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+}
+
+.content-3 {
+    margin-left: 218px;
+    margin-top: 243px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 128px;
+    font-weight: 600;
+}
+
+.info-3 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.img-3 {
+    margin-top: 131px;
+    margin-right: 105px;
+}
+
+.red-3 {
+    color: red;
+    margin-right: 30px;
+}
