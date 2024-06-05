@@ -9,7 +9,7 @@ import Watch from '../../components/watch/watch'
 import Partners from '../../components/partners/partner'
 import cs22 from '../../assets/header/Frame 5 (2).svg'
 import FAQ from '../../components/questions/question'
-
+import Header from '../../components/header/header'
 
 
 
@@ -17,6 +17,7 @@ import FAQ from '../../components/questions/question'
 export default function MainPage() {
   return (
     <>
+    <Header/>
       <Banner />
 
     <Calendar/>

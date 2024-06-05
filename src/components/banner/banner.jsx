@@ -9,7 +9,7 @@ import bgasia from '../../assets/asiamall beck.svg'
 export default function Banner() {
   return (
     <div>
-      <Header/>
+        {/* <Header/> */}
       <main className='banner' style={{ backgroundImage: `url(${bgasia})`} }>
         {/* <div className="title-mm"></div> */}
         <div className='tt'><img src={dd} alt="" /></div>
