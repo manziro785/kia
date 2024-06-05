@@ -9,10 +9,12 @@ import { useSwiper, Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import Btnswp from "../btnswp/btnswp";
+import bggame from'../../assets/dicipline/calll 1.svg' 
+
 
 const GameSection = () => {
   return (
-    <div className="game-section">
+    <div className="game-section" style={{ backgroundImage: `url(${bggame})`}}>
       <div className="background-layer">
         <div className="gradient-overlay"></div>
         <div className="content-layer">
