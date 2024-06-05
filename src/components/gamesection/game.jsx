@@ -18,18 +18,18 @@ const GameSection = () => {
         <div className="gradient-overlay"></div>
         <div className="content-layer">
           <h2>Игровые дисциплины</h2>
-          <div className="evSlider">
+          <div className="gameSlider">
             <Swiper
               slidesPerView={1}
               spaceBetween={50}
               breakpoints={{
                 430: {
                   slidesPerView: 2,
-                  spaceBetween: 30,
+                  spaceBetween: 20,
                 },
                 768: {
                   slidesPerView: 3,
-                  spaceBetween: 40,
+                  spaceBetween: 20,
                 },
                 1440: {
                   slidesPerView: 3,
@@ -41,40 +41,26 @@ const GameSection = () => {
               loop={true}
             >
               <SwiperSlide className="game-card">
-                <img
-                  src={cs2}
-                  alt=""
-                  className="swpimg"
-                  style={{ width: "10rem" }}
-                />
+                <img src={cs2} alt="" className="swpimggame" />
                 <a href="/register-cs" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
-                <img
-                  src={dota}
-                  alt=""
-                  className="swpimg"
-                  style={{ width: "10rem" }}
-                />
+                <img src={dota} alt="" className="swpimggame" />
                 <a href="/register-dota" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
-                <img
-                  src={pubg}
-                  alt=""
-                  className="swpimg"
-                  style={{ width: "10rem" }}
-                />
+                <img src={pubg} alt="" className="swpimggame" />
                 <a href="/register-pubg" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
-
-              <Btnswp />
+              <div className="btnGame">
+                <Btnswp />
+              </div>
             </Swiper>
             <a href="/register" className="participate-button">
               Участвовать

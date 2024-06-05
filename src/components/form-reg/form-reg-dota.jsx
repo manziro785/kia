@@ -296,7 +296,7 @@ export default function Formregdota() {
           <div className="header-register">
             <div className="loogo" onClick={handleRedirect}>
               <img src={left} alt="" />
-              <div>на главную</div>
+              <div>На главную</div>
             </div>
             <div className="navbar" onClick={handleRedirect}>
               <div>связаться с нами</div>

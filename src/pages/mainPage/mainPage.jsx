@@ -10,7 +10,6 @@ import Partners from "../../components/partners/partner";
 import cs22 from "../../assets/header/Frame 5 (2).svg";
 import FAQ from "../../components/questions/question";
 import Header from "../../components/header/header";
-import GameSection2 from "../../components/game2/game2";
 import Calendar2 from "../../components/calendar2/calendar2";
 import "./mainPage.css";
 
@@ -28,12 +27,7 @@ export default function MainPage() {
 
       <Car />
       <Num />
-      <div className="wrap-game-sec" style={{ display: "none" }}>
-        <GameSection />
-      </div>
-      <div className="wrap-game-sec2">
-        <GameSection2 />
-      </div>
+      <GameSection />
       <Watch />
       <Partners />
       <FAQ />
