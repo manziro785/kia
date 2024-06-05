@@ -31,12 +31,12 @@ export default function MainPage() {
     </div>
 
     <Car/>
-    {/* <Num/> */}
-    <div className="wrap-game-sec" style={{display: 'none'}}>
+    <Num/>
+    <div className="wrap-game-sec" >
     <GameSection/>
 
     </div>
-    <div className="wrap-game-sec2">
+    <div className="wrap-game-sec2" style={{display: 'none'}}>
     <GameSection2/>
 
     </div>

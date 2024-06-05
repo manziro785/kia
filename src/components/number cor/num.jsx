@@ -29,7 +29,7 @@ function Num() {
       showCurrentContainer();
     }
 
-    const intervalId = setInterval(nextContainer, 1000000);
+    const intervalId = setInterval(nextContainer, 300000);
 
     showCurrentContainer();
 
@@ -37,10 +37,13 @@ function Num() {
   }, [currentIndex]);
 
   return (
+    <>
+                     <h1 className='title-bum' style={{marginTop: '6rem', marginLeft: '8rem', fontSize: '3rem', marginBottom: '0'}}>ТУРНИР В ЦИФРАХ</h1> 
+
     <div className="main-container-u">
+
       <div className="container-u" >
         <div className="main-u">
-          {/* <div className="header-u">ТУРНИР В ЦИФРАХ</div> */}
           <div className="content-u">
             
             <div className="million-u">
@@ -68,15 +71,16 @@ function Num() {
       <div className="container-3-u">
         <div className="content-3-u">
           <div className="header-3-u">
-            <span className="red-3-u">25</span> +
+            <span className="red-3-u">35</span> +
           </div>
-          <div className="info-3-u">СПОНСОРОВ</div>
+          <div className="info-3-u">СПОНСОРОВ И ПАРТНЕРОВ</div>
         </div>
         <div className="img-3-u">
           <img src={thirdimg} alt="" />
         </div>
       </div>
     </div>
+    </>
   );
 }
 
