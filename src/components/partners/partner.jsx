@@ -55,7 +55,8 @@ const Partners = () => {
                         </div>
                         <div className="sponsor-item">
                             <img src={sanarip} className="sponsor-image" alt="Санарип" style={{background:"white"}}/>
-                            <div className="sponsor-name">Жогорку кенеш</div>
+                            <div className="sponsor-name">Министерство цифрового развития Кыргызстана
+</div>
                         </div>
                         <div className="sponsor-item">
                             <img src={kiaorig} className="sponsor-image" alt="KIA"/>
