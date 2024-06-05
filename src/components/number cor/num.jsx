@@ -65,10 +65,8 @@ const events = [
 export default function Num() {
   return (
     <>
-      <div>
-        <h1 style={{ fontSize: "2rem", marginLeft: "5rem" }}>
-          ТУРНИР В ЦИФРАХ
-        </h1>
+      <div className="containerr">
+        <h1 style={{ fontSize: "2rem" }}>ТУРНИР В ЦИФРАХ</h1>
         <Swiper
           slidesPerView={1}
           spaceBetween={0}
