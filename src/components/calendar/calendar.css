@@ -13,9 +13,7 @@ body {
   align-items: center;
   width: 100%;
 }
-.wrapper-calen {
-  /* width: 130%; */
-}
+
 .events-calendar {
   width: 100%;
   /* max-width: 1200px; */
@@ -45,48 +43,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 /* .navigation button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   } */
-  
-  .events-slider-wrapper {
-    overflow: hidden;
-    width: 1080px;
 
-  }
-  
-  .events-slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  .wrap-cal, .wrap-call {
-    display: flex;
-    width: fit-content;
-  }
-  
-  .event {
-    max-width: 100%; /* Display one event per slide */
-    padding: 0px;
-    box-sizing: border-box;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .event h2,
-  .event p {
-    margin: 0;
-    padding: 5px 0;
-  }
-  .event img {
-    height: 500px;
-    
-    padding: 0 5px;
+.events-slider-wrapper {
+  overflow: hidden;
+  width: 1080px;
+}
+
+.events-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.wrap-cal,
+.wrap-call {
+  display: flex;
+  width: fit-content;
+}
+
+.event {
+  max-width: 100%; /* Display one event per slide */
+  padding: 0px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.event h2,
+.event p {
+  margin: 0;
+  padding: 5px 0;
+}
+.event img {
+  height: 500px;
+
+  padding: 0 5px;
 }
 .event div  {
     /* width: 100%; */
@@ -108,9 +107,7 @@ transition: all 0.4s ease;
 .wrap-call {
   width: 73%;
 } */
-.wrapp-main {
-  box-sizing: border-box;
-}
+
 .calendar-header h1 {
   font-size: 40px;
   margin-left: 30px;
@@ -138,11 +135,44 @@ transition: all 0.4s ease;
   pointer-events: none;
   z-index: 1;
 } */
+.calenSwiper {
+  padding: 1rem 2rem !important;
+}
+.evSlider {
+  display: flex;
+  margin: auto;
+  width: 80vw;
+}
 
+.btnswp1 > img,
+.btnswp2 > img {
+  width: 1rem;
+}
+.btnswp1 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0px;
+  background: none;
+  border: none;
+}
+.btnswp2 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 0rem;
+  transform: rotateY(3.142rad);
+  background: none;
+  border: none;
+}
+.swpimg {
+  width: 10rem;
+}
 .wrapper-calen > * {
   position: relative;
   z-index: 2;
 }
+
 .photo-container1 {
   position: absolute;
   left: -1500px;
@@ -160,7 +190,7 @@ transition: all 0.4s ease;
 }
 .events-calendar {
   z-index: 10;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 @media (max-width: 1500px) {

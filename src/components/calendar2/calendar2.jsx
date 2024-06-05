@@ -1,10 +1,15 @@
 import React from "react";
-import "./game.css";
+import "./calendar2.css";
 import cs2 from "../../assets/dicipline/csss2 1.svg";
 import pubg from "../../assets/dicipline/1.svg";
 import dota from "../../assets/dicipline/2.svg";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { useSwiper, Swiper, SwiperSlide } from "swiper/react";
+
+import img2 from "../../assets/calendar/16.svg";
+import img4 from "../../assets/calendar/Group - 1.svg";
+import img6 from "../../assets/calendar/Group3.svg";
+
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,7 +17,7 @@ import Btnswp from "../btnswp/btnswp";
 import bggame from'../../assets/dicipline/calll 1.svg' 
 
 
-const GameSection = () => {
+const Calendar2 = () => {
   return (
     <div className="game-section" style={{ backgroundImage: `url(${bggame})`}}>
       <div className="background-layer">
@@ -49,19 +54,32 @@ const GameSection = () => {
               className="gameCards"
             >
               <SwiperSlide className="game-card">
-                <img src={cs2} alt="" className="swpimg" />
+                <img src={img2} alt="" className="swpimg" />
                 <a href="/register-cs" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
-                <img src={dota} alt="" className="swpimg" />
+                <img src={img4} alt="" className="swpimg" />
                 <a href="/register-dota" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
-                <img src={pubg} alt="" className="swpimg" />
+                <img src={img6} alt="" className="swpimg" />
+                <a href="/register-pubg" className="participate-button">
+                  Участвовать
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="game-card">
+                <img src={img2} alt="" className="swpimg" />
+                <a href="/register-pubg" className="participate-button">
+                  Участвовать
+                </a>
+              </SwiperSlide>
+              
+              <SwiperSlide className="game-card">
+                <img src={img4} alt="" className="swpimg" />
                 <a href="/register-pubg" className="participate-button">
                   Участвовать
                 </a>
@@ -108,4 +126,4 @@ const GameSection = () => {
   );
 };
 
-export default GameSection;
+export default Calendar2;
