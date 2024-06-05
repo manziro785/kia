@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="main">
+                <div class="header">
+                    ТУРНИР В ЦИФРАХ
+                </div>
+                <div class="content">
+                    <div class="million">
+                        <span class="red">1 000  000</span> сом
+                    </div>
+                <div class="info">
+                    Призовой фонд турнира
+                </div>
+                </div>
+            </div>
+            <div class="imh">
+                <img src="/svg/CS win.svg" alt="">
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="content-2">
+                <div class="header-2">
+                    <span class="red">50</span> команд
+                </div>
+            <div class="info-2">
+                500+ участников
+            </div>
+            </div>
+            <div class="img-2">
+                <img src="/svg/CS tour.svg" alt="">
+            </div>
+        </div>
+        <div class="container-3">
+            <div class="content-3">
+                <div class="header-3">
+                    <span class="red-3">25</span> +
+                </div>
+                <div class="info-3">
+                    СПОНСОРОВ
+                </div>
+            </div>
+            <div class="img-3">
+                <img src="/svg/Screen.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+          
+          window.onload = function() {
+    const containers = document.querySelectorAll('.main-container > div');
+    let currentIndex = 0;
+
+    function showCurrentContainer() {
+        containers.forEach((container, index) => {
+            if (index === currentIndex) {
+                container.classList.add('active');
+            } else {
+                container.classList.remove('active');
+            }
+        });
+    }
+
+    function nextContainer() {
+        currentIndex = (currentIndex + 1) % containers.length;
+        const containerWidth = containers[0].offsetWidth;
+        const newPosition = currentIndex * containerWidth;
+        document.querySelector('.main-container').scrollLeft = newPosition;
+        showCurrentContainer();
+    }
+
+    setInterval(nextContainer, 3000); // Прокрутка каждые 3 секунды (можно изменить интервал)
+    showCurrentContainer(); // Показываем первый контейнер при загрузке страницы
+          }
+    </script>
+</body>
+</html>

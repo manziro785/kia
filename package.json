@@ -4,7 +4,7 @@
   "description": "slider + tornament",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run dev"
   },
   "keywords": [
     "JS",
@@ -12,5 +12,14 @@
     "slider"
   ],
   "author": "Ali",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-react": "^7.24.7"
+  }
 }
