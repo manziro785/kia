@@ -12,13 +12,13 @@ import FAQ from "../../components/questions/question";
 import Header from "../../components/header/header";
 import GameSection2 from "../../components/game2/game2";
 import Calendar2 from "../../components/calendar2/calendar2";
+import "./mainPage.css";
 
 export default function MainPage() {
   return (
     <>
       <Header />
       <Banner />
-
       <div className="wrap-calendar-sec">
         <Calendar />
       </div>

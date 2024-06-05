@@ -75,10 +75,8 @@ export default function Calendar() {
 
   return (
     <>
-      <div className="wrapp-main">
-        <h1 style={{ marginLeft: "5rem", marginTop: "5rem" }}>
-          КАЛЕНДАРЬ СОБЫТИЙ
-        </h1>
+      <div className="wrapp-main containerr">
+        <h1 style={{ marginTop: "5rem" }}>КАЛЕНДАРЬ СОБЫТИЙ</h1>
         <div className="evSlider">
           <Swiper
             slidesPerView={1}

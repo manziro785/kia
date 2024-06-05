@@ -1,42 +1,58 @@
 .watch-container {
-    background: #2B1028;
-    padding: 20px;
-    text-align: left;
+  background: #2b1028;
+  padding: 20px;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .watch-title {
-    color: white;
-    text-align: left;
-    font-size: 60px;
-    margin-left: 50px;
+  color: white;
+  text-align: left;
+  font-size: 60px;
 }
 
 .watch-title span {
-    color: red;
+  color: red;
 }
 
 .video-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    border-radius: 5px;
-    padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 5px;
+  height: 70vh;
 }
 
 .video-container iframe {
-    width: calc(33% - 20px); /* ширина каждого видео при трех в ряду */
-    border-radius: 15px;
+  border-radius: 15px;
+  width: 30%;
+  height: 33%;
 }
 
-@media (max-width: 768px) {
-    .video-container iframe {
-        width: calc(50% - 20px); /* ширина каждого видео при двух в ряду */
-    }
+@media (max-width: 1024px) {
+  .video-container iframe {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 648px) {
+  .video-container iframe {
+    width: 100%;
+    height: 50%;
+  }
+  .watch-container {
+    height: 130vmax;
+  }
 }
 
-@media (max-width: 480px) {
-    .video-container iframe {
-        width: 100%; /* ширина каждого видео при одном в ряду */
-    }
+@media (max-width: 430px) {
+  .video-container iframe {
+    height: 30%;
+  }
+  .watch-container {
+    height: 90vmax;
+    padding: 0;
+  }
 }
