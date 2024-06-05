@@ -214,7 +214,7 @@
 
 
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { redirect, useNavigate } from 'react-router-dom';
 import './pubg-reg.css';
 import axios from 'axios';
 // import fg from '../../assets/bg-dota.svg' 
@@ -297,16 +297,16 @@ export default function Pubgreg() {
                     <div className="header-register">
                         <div className="loogo" onClick={handleRedirect}>
                             <img src={left} alt="" />
-                            <div>на главную</div>
+                            <div>НА ГЛАВНУЮ</div>
                         </div>
                         <div className="navbar" onClick={handleRedirect}>
                            
-                            <div>связаться с нами</div>
+                            <div onClick={redirect} >СВЯЗАТЬСЯ С НАМИ</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="container-reg" style={{ backgroundImage: `url(${bgp})` }}>
+            <div className="container-reg" style={{ backgroundImage: `url(${bgp})`, backgroundPosition: 'center' }}>
                 <div className="logo-kia">
                     <img src={bgkia} alt="" />
                 </div>
@@ -400,17 +400,7 @@ export default function Pubgreg() {
                                         />
                                         {errors.player_4 && <span className="error">{errors.player_4}</span>}
                                     </div>
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            name="player_5"
-                                            className="input-right"
-                                            placeholder="Введите имя и фамилию пятого игрока"
-                                            value={formData.player_5}
-                                            onChange={handleChange}
-                                        />
- {errors.player_5 && <span className="error">{errors.player_5}</span>}
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </form>

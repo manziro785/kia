@@ -33,7 +33,7 @@ max-width: 1950px;
 margin: 0 auto
 }
 .tittle-foot {
-    font-size: 30px;
+    font-size: 25px !important;
     color: 700;
     text-align: left;
     margin-left: 5px;
@@ -100,6 +100,21 @@ margin: 0 auto
     .footer-main {
     }
 }
+.copy-messagee {
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+    background-color:#B4002D;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
 
 
 .logo-foot {
@@ -108,7 +123,7 @@ margin: 0 auto
 .cont div {
     text-align: left;
 font-weight: 500;
-font-size: 27px;
+font-size: 20px;
 margin: 10px 0;
 transition: all 0.3s ease;
 
@@ -131,4 +146,11 @@ transition: all 0.3s ease;
 .socials-link div {
     cursor: pointer;
     margin-right: 20px;
+}
+.socials-link img {
+  width: 43px;
+}
+
+.contacts {
+    margin-top: 20px;
 }

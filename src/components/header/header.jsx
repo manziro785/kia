@@ -58,16 +58,16 @@ export default function Header() {
           <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
             <ul className="header-list">
               <li className="header-item">
-                <a href="/" className="header-link" onClick={() => scrollToElement(document.getElementById('car'), 1000)}>ОБЩАЯ ИНФОРМАЦИЯ</a>
+                <div className="header-link" style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('car'), 1000)}>ОБЩАЯ ИНФОРМАЦИЯ</div>
               </li>
               <li className="header-item">
-                <a href="/" className="header-link" onClick={() => scrollToElement(document.getElementById('game'), 1000)}>СМОТРЕТЬ</a>
+                <div className="header-link" style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('game'), 1000)}>СМОТРЕТЬ</div>
               </li>
               <li className="header-item">
-                <div className="header-link">УЧАСТНИКИ</div>
+                <div className="header-link" style={{cursor: 'pointer'}} >УЧАСТНИКИ</div>
               </li>
               <li className="header-item">
-                <div className="header-link" onClick={() => scrollToElement(document.getElementById('footer'), 1000)}>СВЯЗАТЬСЯ С НАМИ</div>
+                <div className="header-link" style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('footer'), 1000)}>СВЯЗАТЬСЯ С НАМИ</div>
               </li>
             </ul>
           </nav>
@@ -95,10 +95,10 @@ export default function Header() {
           <div className="custom-tooltip">
             <img src={burger} alt="Mini Photo" className="mini-photo" id="person" />
               <div className="tooltiptext">
-                <a href='' className='burger-item'>ОБЩАЯ ИНФОРМАЦИЯ</a>
-                <a href='' className='burger-item'>СМОТРЕТЬ</a>
-                <a href='' className='burger-item'>УЧАСТНИКИ</a>
-                <a href='' className='burger-item'>СВЯЗАТЬСЯ С НАМИ</a>
+                <div className='burger-item' style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('car'), 1000)}>ОБЩАЯ ИНФОРМАЦИЯ</div>
+                <div className='burger-item' style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('game'), 1000)}>СМОТРЕТЬ</div>
+                <div className='burger-item'style={{cursor: 'pointer'}} >УЧАСТНИКИ</div>
+                <div className='burger-item' style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('footer'), 1000)}>СВЯЗАТЬСЯ С НАМИ</div>
               </div>
           </div>
         </div>

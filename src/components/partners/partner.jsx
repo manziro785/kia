@@ -50,20 +50,29 @@ const Partners = () => {
                     <h1 className="title">Спонсоры</h1>
                     <div className="sponsor-container">
                         <div className="sponsor-item">
+                            <a href="https://alatoo.edu.kg/">
                             <img src={ala} className="sponsor-image" alt="Ала-Тоо"/>
+                            </a>
                             <div className="sponsor-name">Ала-Тоо</div>
                         </div>
                         <div className="sponsor-item">
+                        <a href="https://ict.sanarip.org/">
+
                             <img src={sanarip} className="sponsor-image" alt="Санарип" style={{background:"white"}}/>
+                            </a>
                             <div className="sponsor-name">Министерство цифрового развития Кыргызстана
 </div>
                         </div>
                         <div className="sponsor-item">
+                            <a href="https://www.kia-bishkek.kg/">
                             <img src={kiaorig} className="sponsor-image" alt="KIA"/>
+                            </a>
                             <div className="sponsor-name">Movement that inspires</div>
                         </div>
                         <div className="sponsor-item">
+                            <a href="https://esf.kg/">
                             <img src={flag} className="sponsor-image" alt="Flag"/>
+                            </a>
                             <div className="sponsor-name">Федерация Компьютерного Спорта</div>
                         </div>
                     </div>

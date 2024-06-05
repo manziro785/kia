@@ -219,12 +219,14 @@
 
 
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { redirect, useNavigate } from 'react-router-dom';
 import './cs-reg.css';
 import axios from 'axios';
 import left from '../../../assets/header/left.svg';
 import bgkia from '../../../assets/banner/kia-bg.svg';
 import cs from '../../../assets/register/bgcss.svg';
+import css from '../../../assets/register/bg-cs.svg';
+
 import InputMask from 'react-input-mask';
 
 export default function Regcs() {
@@ -298,12 +300,12 @@ export default function Regcs() {
                 <div className="header-reg">
                     <div className="header-register">
                         <div className="loogo" onClick={handleRedirect}>
-                            <img src={left} alt="" />
-                            <div>на главную</div>
+                        <img src={left} alt="" />
+                            <div>НА ГЛАВНУЮ</div>
                         </div>
                         <div className="navbar" onClick={handleRedirect}>
-                            
-                            <div>связаться с нами</div>
+                           
+                            <div onClick={redirect} >СВЯЗАТЬСЯ С НАМИ</div>
                         </div>
                     </div>
                 </div>
