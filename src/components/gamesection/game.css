@@ -181,6 +181,7 @@
   }
 }
 
+
 @media (max-width: 500px) {
   /* .background-layer {
      
@@ -195,6 +196,13 @@
     font-size: 0.7rem;
     font-weight: bolder;
   } */
+  .game-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .coneiner-car {
+    margin-top: 0;
+  }
   .watch-title {
     margin-left: 5px !important;
     margin-top: 70px;

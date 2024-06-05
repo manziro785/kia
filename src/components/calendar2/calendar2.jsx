@@ -6,9 +6,12 @@ import dota from "../../assets/dicipline/2.svg";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { useSwiper, Swiper, SwiperSlide } from "swiper/react";
 
-import img2 from "../../assets/calendar/16.svg";
-import img4 from "../../assets/calendar/19.svg";
-import img6 from "../../assets/calendar/Group3.svg";
+import img1 from "../../assets/calendar/img-pubg.svg";
+import img2 from "../../assets/calendar/img-dota.svg";
+import img3 from "../../assets/calendar/img-pubg2.svg";
+import img4 from "../../assets/calendar/img-dota2.svg";
+import img5 from "../../assets/calendar/img-pubg3.svg";
+import img6 from "../../assets/calendar/img-dota3.svg";
 
 
 import "swiper/css";
@@ -54,32 +57,38 @@ const Calendar2 = () => {
               className="gameCards"
             >
               <SwiperSlide className="game-card">
-                <img src={img2} alt="" className="swpimg" />
+                <img src={img1} alt="" className="swpimg" />
                 <a href="/register-cs" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
-                <img src={img4} alt="" className="swpimg" />
+                <img src={img2} alt="" className="swpimg" />
                 <a href="/register-dota" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
-                <img src={img2} alt="" className="swpimg" />
+                <img src={img3} alt="" className="swpimg" />
                 <a href="/register-pubg" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
-                <img src={img2} alt="" className="swpimg" />
+                <img src={img4} alt="" className="swpimg" />
                 <a href="/register-pubg" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               
               <SwiperSlide className="game-card">
-                <img src={img4} alt="" className="swpimg" />
+                <img src={img5} alt="" className="swpimg" />
+                <a href="/register-pubg" className="participate-button">
+                  Участвовать
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="game-card">
+                <img src={img6} alt="" className="swpimg" />
                 <a href="/register-pubg" className="participate-button">
                   Участвовать
                 </a>

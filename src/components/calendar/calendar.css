@@ -165,8 +165,11 @@ transition: all 0.4s ease;
   background: none;
   border: none;
 }
-.swpimg {
+/* .swpimg {
   width: 10rem;
+} */
+.swpimg {
+  height: 26rem;
 }
 .wrapper-calen > * {
   position: relative;

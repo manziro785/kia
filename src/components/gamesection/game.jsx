@@ -49,19 +49,19 @@ const GameSection = () => {
               className="gameCards"
             >
               <SwiperSlide className="game-card">
-                <img src={cs2} alt="" className="swpimg" />
+                <img src={cs2} alt="" className="swpimg"  style={{width: '10rem'}}/>
                 <a href="/register-cs" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
-                <img src={dota} alt="" className="swpimg" />
+                <img src={dota} alt="" className="swpimg" style={{width: '10rem'}}/>
                 <a href="/register-dota" className="participate-button">
                   Участвовать
                 </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
-                <img src={pubg} alt="" className="swpimg" />
+                <img src={pubg} alt="" className="swpimg" style={{width: '10rem'}}/>
                 <a href="/register-pubg" className="participate-button">
                   Участвовать
                 </a>
