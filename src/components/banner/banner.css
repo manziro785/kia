@@ -1,8 +1,19 @@
 
+.sanarip-img{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.sanarip{
+  width: 20%;
+}
 
 .banner {
   box-sizing: border-box;
   width: 100wh;
+  padding-top: 100px;
   /* background-image: url(/src/assets/asiamall\ beck.svg); */
 
   background-position: center;
@@ -78,8 +89,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .tt img {
@@ -100,5 +112,10 @@
   }
   .tt {
     /* height: 40vh; */
+  }
+}
+@media (max-width: 768px) {
+  .sanarip{
+    width: 35%;
   }
 }
