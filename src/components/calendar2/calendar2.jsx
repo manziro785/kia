@@ -13,16 +13,18 @@ import img4 from "../../assets/calendar/img-dota2.svg";
 import img5 from "../../assets/calendar/img-pubg3.svg";
 import img6 from "../../assets/calendar/img-dota3.svg";
 
-
 import "swiper/css";
 import "swiper/css/pagination";
 import Btnswp from "../btnswp/btnswp";
-import bggame from'../../assets/dicipline/calll 1.svg' 
-
+import bggame from "../../assets/dicipline/calll 1.svg";
 
 const Calendar2 = () => {
   return (
-    <div className="game-section" id="game" style={{ backgroundImage: `url(${bggame})`}}>
+    <div
+      className="game-section"
+      id="game"
+      style={{ backgroundImage: `url(${bggame})` }}
+    >
       <div className="background-layer">
         <div className="gradient-overlay"></div>
         <div className="content-layer">
@@ -58,40 +60,22 @@ const Calendar2 = () => {
             >
               <SwiperSlide className="game-card">
                 <img src={img1} alt="" className="swpimg" />
-                <a href="/register-cs" className="participate-button">
-                  Участвовать
-                </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
                 <img src={img2} alt="" className="swpimg" />
-                <a href="/register-dota" className="participate-button">
-                  Участвовать
-                </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
                 <img src={img3} alt="" className="swpimg" />
-                <a href="/register-pubg" className="participate-button">
-                  Участвовать
-                </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
                 <img src={img4} alt="" className="swpimg" />
-                <a href="/register-pubg" className="participate-button">
-                  Участвовать
-                </a>
               </SwiperSlide>
-              
+
               <SwiperSlide className="game-card">
                 <img src={img5} alt="" className="swpimg" />
-                <a href="/register-pubg" className="participate-button">
-                  Участвовать
-                </a>
               </SwiperSlide>
               <SwiperSlide className="game-card">
                 <img src={img6} alt="" className="swpimg" />
-                <a href="/register-pubg" className="participate-button">
-                  Участвовать
-                </a>
               </SwiperSlide>
               {/* <SwiperSlide className="game-card">
                 <img src={cs2} alt="" className="swpimg" />

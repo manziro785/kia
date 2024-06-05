@@ -3,10 +3,8 @@
 // import'./cs-reg.css'
 // import axios from 'axios';
 // import left from '../../../assets/header/left.svg';
-// import bgkia from '../../../assets/banner/kia-bg.svg' 
-// import cs from '../../../assets/register/bgcss.svg' 
-
-
+// import bgkia from '../../../assets/banner/kia-bg.svg'
+// import cs from '../../../assets/register/bgcss.svg'
 
 // export default function Regcs() {
 
@@ -19,14 +17,14 @@
 //         player_4: '',
 //         player_5: '',
 //       });
-    
+
 //       const [errors, setErrors] = useState({});
 //       const navigate = useNavigate();
-    
+
 //       const handleRedirect = () => {
 //         navigate('/');
 //       };
-    
+
 //       const validate = () => {
 //         const errors = {};
 //         if (!formData.name) errors.name = 'Введите имя';
@@ -38,11 +36,11 @@
 //         if (!formData.section) errors.section = 'Выберите секцию';
 //         return errors;
 //       };
-    
+
 //       const handleChange = (e) => {
 //         setFormData({ ...formData, [e.target.name]: e.target.value });
 //       };
-    
+
 //       const handleSubmit = async (e) => {
 //         e.preventDefault();
 //         const validationErrors = validate();
@@ -61,10 +59,7 @@
 //           }
 //         }
 //       };
-    
 
-
-      
 //   return (
 //     <>
 //     <div className="wrapp-reg-logo">
@@ -83,7 +78,6 @@
 
 //         <div>участники</div> */}
 //         <div>cвязаться с нами</div>
-
 
 //     </div>
 //     </div>
@@ -135,7 +129,7 @@
 //               </div>
 
 //               <div className="subm-reg">
-//           <button type="submit" className="submit-button"  
+//           <button type="submit" className="submit-button"
 // >Участвовать</button>
 //           </div>
 //             </div>
@@ -154,7 +148,7 @@
 //                 {errors.email && <span className="error">{errors.email}</span>}
 //               </div>
 //               <div className="form-group">
-                
+
 //                 <input
 //                   type="email"
 //                   className='input-right'
@@ -201,16 +195,15 @@
 //                   onChange={handleChange}
 //                 />
 //                 {errors.email && <span className="error">{errors.email}</span>}
-              
+
 //               </div>
-              
+
 //             </div>
 //           </div>
-          
-          
+
 //         </form>
 //         </div>
-            
+
 //         </div>
 //     </div>
 //     </>
@@ -219,80 +212,87 @@
 
 
 import React, { useState, useEffect, useRef } from 'react';
-import { redirect, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './cs-reg.css';
 import axios from 'axios';
 import left from '../../../assets/header/left.svg';
 import bgkia from '../../../assets/banner/kia-bg.svg';
 import cs from '../../../assets/register/bgcss.svg';
-import css from '../../../assets/register/bg-cs.svg';
-
 import InputMask from 'react-input-mask';
 
 export default function Regcs() {
-    const [formData, setFormData] = useState({
-        team_name: '',
-        phone_number: '+996 ',
-        player_1: '',
-        player_2: '',
-        player_3: '',
-        player_4: '',
-        player_5: '',
-    });
+  const [formData, setFormData] = useState({
+    team_name: "",
+    phone_number: "+996 ",
+    player_1: "",
+    player_2: "",
+    player_3: "",
+    player_4: "",
+    player_5: "",
+  });
 
-    const [errors, setErrors] = useState({});
-    const [isAlertVisible, setIsAlertVisible] = useState(false);
-    const navigate = useNavigate();
-    const phoneInputRef = useRef(null);
+  const [errors, setErrors] = useState({});
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
+  const navigate = useNavigate();
+  const phoneInputRef = useRef(null);
 
-    useEffect(() => {
-        if (phoneInputRef.current) {
-            phoneInputRef.current.setSelectionRange(5, 5);
+  useEffect(() => {
+    if (phoneInputRef.current) {
+      phoneInputRef.current.setSelectionRange(5, 5);
+    }
+  }, []);
+
+  const handleRedirect = () => {
+    navigate("/");
+  };
+
+  const validate = () => {
+    const errors = {};
+    if (!formData.team_name) errors.team_name = "Введите название команды";
+    if (!formData.phone_number)
+      errors.phone_number = "Введите номер телефона капитана";
+    if (!formData.player_1)
+      errors.player_1 = "Введите имя и фамилию первого игрока";
+    if (!formData.player_2)
+      errors.player_2 = "Введите имя и фамилию второго игрока";
+    if (!formData.player_3)
+      errors.player_3 = "Введите имя и фамилию третьего игрока";
+    if (!formData.player_4)
+      errors.player_4 = "Введите имя и фамилию четвертого игрока";
+    if (!formData.player_5)
+      errors.player_5 = "Введите имя и фамилию пятого игрока";
+    return errors;
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const validationErrors = validate();
+    setErrors(validationErrors);
+    if (Object.keys(validationErrors).length === 0) {
+      try {
+        console.log("Submitting form data:", formData);
+        const response = await axios.post(
+          "http://217.151.230.35:200/register/cs/",
+          formData
+        );
+        console.log("Registration successful:", response.data);
+        setIsAlertVisible(true);
+        setTimeout(() => {
+          setIsAlertVisible(false);
+          navigate("/");
+        }, 3000);
+      } catch (error) {
+        console.error("Error during registration:", error);
+        if (error.response) {
+          console.error("Server responded with:", error.response.data);
         }
-    }, []);
-
-    const handleRedirect = () => {
-        navigate('/');
-    };
-
-    const validate = () => {
-        const errors = {};
-        if (!formData.team_name) errors.team_name = 'Введите название команды';
-        if (!formData.phone_number) errors.phone_number = 'Введите номер телефона капитана';
-        if (!formData.player_1) errors.player_1 = 'Введите имя и фамилию первого игрока';
-        if (!formData.player_2) errors.player_2 = 'Введите имя и фамилию второго игрока';
-        if (!formData.player_3) errors.player_3 = 'Введите имя и фамилию третьего игрока';
-        if (!formData.player_4) errors.player_4 = 'Введите имя и фамилию четвертого игрока';
-        if (!formData.player_5) errors.player_5 = 'Введите имя и фамилию пятого игрока';
-        return errors;
-    };
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const validationErrors = validate();
-        setErrors(validationErrors);
-        if (Object.keys(validationErrors).length === 0) {
-            try {
-                console.log('Submitting form data:', formData);
-                const response = await axios.post('http://217.151.230.35:200/register/cs/', formData);
-                console.log('Registration successful:', response.data);
-                setIsAlertVisible(true);
-                setTimeout(() => {
-                    setIsAlertVisible(false);
-                    navigate('/');
-                }, 3000);
-            } catch (error) {
-                console.error('Error during registration:', error);
-                if (error.response) {
-                    console.error('Server responded with:', error.response.data);
-                }
-            }
-        }
-    };
+      }
+    }
+  };
 
     return (
         <>
@@ -300,12 +300,12 @@ export default function Regcs() {
                 <div className="header-reg">
                     <div className="header-register">
                         <div className="loogo" onClick={handleRedirect}>
-                        <img src={left} alt="" />
+                            <img src={left} alt="" />
                             <div>НА ГЛАВНУЮ</div>
                         </div>
                         <div className="navbar" onClick={handleRedirect}>
-                           
-                            <div onClick={redirect} >СВЯЗАТЬСЯ С НАМИ</div>
+                            
+                            <div>СВЯЗАТЬСЯ С НАМИ</div>
                         </div>
                     </div>
                 </div>

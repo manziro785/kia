@@ -1,33 +1,21 @@
-
-.sanarip-img{
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-
+.sanarip-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.sanarip{
-  width: 20%;
+.sanarip {
+  width: 40%;
 }
 
 .banner {
   box-sizing: border-box;
-  width: 100wh;
+  width: 100%;
   padding-top: 100px;
   /* background-image: url(/src/assets/asiamall\ beck.svg); */
-
+  background-size: cover;
   background-position: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 .big-logo {
   position: relative;
@@ -91,7 +79,7 @@ align-items: center;
   align-items: center;
   height: fit-content;
   width: 100%;
-  margin-bottom: 100px;
+  margin: 7rem 0;
 }
 @media (max-width: 468px) {
   .tt {
@@ -114,12 +102,9 @@ align-items: center;
     width: 100%;
     max-width: 100%;
   }
-  .tt {
-    /* height: 40vh; */
-  }
 }
 @media (max-width: 768px) {
-  .sanarip{
-    width: 35%;
+  .sanarip {
+    width: 70%;
   }
 }

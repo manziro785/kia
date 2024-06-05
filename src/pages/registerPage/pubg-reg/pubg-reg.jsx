@@ -3,10 +3,8 @@
 // import'./pubg-reg.css'
 // import axios from 'axios';
 // import left from '../../../assets/header/left.svg';
-// import bgkia from '../../../assets/banner/kia-bg.svg' 
-// import bgp from '../../../assets/register/bgpubgg.svg' 
-
-
+// import bgkia from '../../../assets/banner/kia-bg.svg'
+// import bgp from '../../../assets/register/bgpubgg.svg'
 
 // export default function Pubgreg() {
 
@@ -19,14 +17,14 @@
 //         player_4: '',
 //         player_5: '',
 //       });
-    
+
 //       const [errors, setErrors] = useState({});
 //       const navigate = useNavigate();
-    
+
 //       const handleRedirect = () => {
 //         navigate('/');
 //       };
-    
+
 //       const validate = () => {
 //         const errors = {};
 //         if (!formData.name) errors.name = 'Введите имя';
@@ -38,11 +36,11 @@
 //         if (!formData.section) errors.section = 'Выберите секцию';
 //         return errors;
 //       };
-    
+
 //       const handleChange = (e) => {
 //         setFormData({ ...formData, [e.target.name]: e.target.value });
 //       };
-    
+
 //       const handleSubmit = async (e) => {
 //         e.preventDefault();
 //         const validationErrors = validate();
@@ -61,10 +59,7 @@
 //           }
 //         }
 //       };
-    
 
-
-      
 //   return (
 //     <>
 //     <div className="wrapp-reg-logo">
@@ -78,9 +73,8 @@
 //     </div>
 
 //     <div className="navbar" onClick={handleRedirect}>
-       
-//         <div>cвязаться с нами</div>
 
+//         <div>cвязаться с нами</div>
 
 //     </div>
 //     </div>
@@ -132,7 +126,7 @@
 //               </div>
 
 //               <div className="subm-reg">
-//           <button type="submit" className="submit-button"  
+//           <button type="submit" className="submit-button"
 // >Участвовать</button>
 //           </div>
 //             </div>
@@ -151,7 +145,7 @@
 //                 {errors.email && <span className="error">{errors.email}</span>}
 //               </div>
 //               <div className="form-group">
-                
+
 //                 <input
 //                   type="email"
 //                   className='input-right'
@@ -201,10 +195,10 @@
 //               </div>
 //             </div>
 //           </div>
-          
+
 //         </form>
 //         </div>
-            
+
 //         </div>
 //     </div>
 //     </>
@@ -220,75 +214,83 @@ import axios from 'axios';
 // import fg from '../../assets/bg-dota.svg' 
 import bgkia from '../../../assets/banner/kia-bg.svg' 
 
-
-import left from '../../../assets/header/left.svg';
-import bgp from '../../../assets/register/bgpubgg.svg' 
-import InputMask from 'react-input-mask';
+import left from "../../../assets/header/left.svg";
+import bgp from "../../../assets/register/bgpubgg.svg";
+import InputMask from "react-input-mask";
 
 export default function Pubgreg() {
-    const [formData, setFormData] = useState({
-        team_name: '',
-        phone_number: '+996 ',
-        player_1: '',
-        player_2: '',
-        player_3: '',
-        player_4: '',
-        player_5: '',
-    });
+  const [formData, setFormData] = useState({
+    team_name: "",
+    phone_number: "+996 ",
+    player_1: "",
+    player_2: "",
+    player_3: "",
+    player_4: "",
+    player_5: "",
+  });
 
-    const [errors, setErrors] = useState({});
-    const [isAlertVisible, setIsAlertVisible] = useState(false);
-    const navigate = useNavigate();
-    const phoneInputRef = useRef(null);
+  const [errors, setErrors] = useState({});
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
+  const navigate = useNavigate();
+  const phoneInputRef = useRef(null);
 
-    useEffect(() => {
-        if (phoneInputRef.current) {
-            phoneInputRef.current.setSelectionRange(5, 5);
+  useEffect(() => {
+    if (phoneInputRef.current) {
+      phoneInputRef.current.setSelectionRange(5, 5);
+    }
+  }, []);
+
+  const handleRedirect = () => {
+    navigate("/");
+  };
+
+  const validate = () => {
+    const errors = {};
+    if (!formData.team_name) errors.team_name = "Введите название команды";
+    if (!formData.phone_number)
+      errors.phone_number = "Введите номер телефона капитана";
+    if (!formData.player_1)
+      errors.player_1 = "Введите имя и фамилию первого игрока";
+    if (!formData.player_2)
+      errors.player_2 = "Введите имя и фамилию второго игрока";
+    if (!formData.player_3)
+      errors.player_3 = "Введите имя и фамилию третьего игрока";
+    if (!formData.player_4)
+      errors.player_4 = "Введите имя и фамилию четвертого игрока";
+    if (!formData.player_5)
+      errors.player_5 = "Введите имя и фамилию пятого игрока";
+    return errors;
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const validationErrors = validate();
+    setErrors(validationErrors);
+    if (Object.keys(validationErrors).length === 0) {
+      try {
+        console.log("Submitting form data:", formData);
+        const response = await axios.post(
+          "http://217.151.230.35:200/register/pubg/",
+          formData
+        );
+        console.log("Registration successful:", response.data);
+        setIsAlertVisible(true);
+        setTimeout(() => {
+          setIsAlertVisible(false);
+          navigate("/");
+        }, 3000);
+      } catch (error) {
+        console.error("Error during registration:", error);
+        if (error.response) {
+          console.error("Server responded with:", error.response.data);
         }
-    }, []);
-
-    const handleRedirect = () => {
-        navigate('/');
-    };
-
-    const validate = () => {
-        const errors = {};
-        if (!formData.team_name) errors.team_name = 'Введите название команды';
-        if (!formData.phone_number) errors.phone_number = 'Введите номер телефона капитана';
-        if (!formData.player_1) errors.player_1 = 'Введите имя и фамилию первого игрока';
-        if (!formData.player_2) errors.player_2 = 'Введите имя и фамилию второго игрока';
-        if (!formData.player_3) errors.player_3 = 'Введите имя и фамилию третьего игрока';
-        if (!formData.player_4) errors.player_4 = 'Введите имя и фамилию четвертого игрока';
-        if (!formData.player_5) errors.player_5 = 'Введите имя и фамилию пятого игрока';
-        return errors;
-    };
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const validationErrors = validate();
-        setErrors(validationErrors);
-        if (Object.keys(validationErrors).length === 0) {
-            try {
-                console.log('Submitting form data:', formData);
-                const response = await axios.post('http://217.151.230.35:200/register/pubg/', formData);
-                console.log('Registration successful:', response.data);
-                setIsAlertVisible(true);
-                setTimeout(() => {
-                    setIsAlertVisible(false);
-                    navigate('/');
-                }, 3000);
-            } catch (error) {
-                console.error('Error during registration:', error);
-                if (error.response) {
-                    console.error('Server responded with:', error.response.data);
-                }
-            }
-        }
-    };
+      }
+    }
+  };
 
     return (
         <>
@@ -306,7 +308,7 @@ export default function Pubgreg() {
                     </div>
                 </div>
             </div>
-            <div className="container-reg" style={{ backgroundImage: `url(${bgp})`, backgroundPosition: 'center' }}>
+            <div className="container-reg" style={{ backgroundImage: `url(${bgp})` }}>
                 <div className="logo-kia">
                     <img src={bgkia} alt="" />
                 </div>
@@ -400,7 +402,17 @@ export default function Pubgreg() {
                                         />
                                         {errors.player_4 && <span className="error">{errors.player_4}</span>}
                                     </div>
-                                    
+                                    <div className="form-group">
+                                        <input
+                                            type="text"
+                                            name="player_5"
+                                            className="input-right"
+                                            placeholder="Введите имя и фамилию пятого игрока"
+                                            value={formData.player_5}
+                                            onChange={handleChange}
+                                        />
+ {errors.player_5 && <span className="error">{errors.player_5}</span>}
+                                    </div>
                                 </div>
                             </div>
                         </form>
