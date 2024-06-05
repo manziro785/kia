@@ -1,0 +1,16 @@
+{
+  "name": "tornament",
+  "version": "1.0.0",
+  "description": "slider + tornament",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JS",
+    "React",
+    "slider"
+  ],
+  "author": "Ali",
+  "license": "ISC"
+}
