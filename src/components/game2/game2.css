@@ -21,7 +21,7 @@
     justify-content: space-between;
   }
 
-  @media (max-width: 1243px) {
+  @media (max-width: 1293px) {
     .wrap-game-sec2 {
 display: none;
 

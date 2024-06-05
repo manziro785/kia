@@ -16,6 +16,35 @@ export default function Header() {
   const handleToggle = () => {
     setIsVisible(!isVisible);
   };
+
+
+  const scrollToElement = (element, duration) => {
+    if (element) {
+      const start = window.pageYOffset;
+      const end = element.getBoundingClientRect().top;
+  
+      let startTime = null;
+  
+      const scrollStep = (timestamp) => {
+        if (!startTime) {
+          startTime = timestamp;
+        }
+  
+        const progress = timestamp - startTime;
+        const easeInOutCubic = progress => progress < 0.5
+          ? 4 * progress ** 3
+          : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+  
+        window.scrollTo(0, start + end * easeInOutCubic(progress / duration));
+  
+        if (progress < duration) {
+          requestAnimationFrame(scrollStep);
+        }
+      };
+  
+      requestAnimationFrame(scrollStep);
+    }
+  };
   return (
     <header className="header">
       <div className="wrapper">
@@ -29,16 +58,16 @@ export default function Header() {
           <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
             <ul className="header-list">
               <li className="header-item">
-                <a href="/" className="header-link">ОБЩАЯ ИНФОРМАЦИЯ</a>
+                <a href="/" className="header-link" onClick={() => scrollToElement(document.getElementById('car'), 1000)}>ОБЩАЯ ИНФОРМАЦИЯ</a>
               </li>
               <li className="header-item">
-                <a href="/" className="header-link">СМОТРЕТЬ</a>
+                <a href="/" className="header-link" onClick={() => scrollToElement(document.getElementById('game'), 1000)}>СМОТРЕТЬ</a>
               </li>
               <li className="header-item">
-                <a href="/" className="header-link">УЧАСТНИКИ</a>
+                <div className="header-link">УЧАСТНИКИ</div>
               </li>
               <li className="header-item">
-                <a href="/" className="header-link">СВЯЗАТЬСЯ С НАМИ</a>
+                <div className="header-link" onClick={() => scrollToElement(document.getElementById('footer'), 1000)}>СВЯЗАТЬСЯ С НАМИ</div>
               </li>
             </ul>
           </nav>

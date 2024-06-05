@@ -1,0 +1,134 @@
+.footer-wrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.socials-link {
+    display:flex;
+}
+
+.footer-wrapper {
+margin-top: 100px;
+}
+.footer-wrapper::before {
+ width: 100%;
+ content: '';
+ display: block;
+ background-color: #B4002D;
+ height: 5px;
+
+}
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    margin: 40px 0;
+    align-items:center;
+    flex-wrap: wrap;
+    
+}
+.footer-wrapp {
+max-width: 1950px;
+margin: 0 auto
+}
+.tittle-foot {
+    font-size: 30px;
+    color: 700;
+    text-align: left;
+    margin-left: 5px;
+}
+.tittle-foot:hover {
+    text-decoration: none;
+    color: #ffff !important;
+
+}
+.logo-foot img {
+    width: 100%;
+}
+@media (max-width:1348px) {
+    .contacts {
+        margin-top: 60px;
+    } 
+    
+}
+@media (max-width:687px) {
+    .contacts {
+        transform: scale(0.8);
+        transform-origin: left center;
+    } 
+}
+@media (max-width:584px) {
+    .logo-foot {
+        margin-left: 0px !important;
+    } 
+}
+@media (max-width:510px) {
+    .cont , .contacts {
+        width: 100%;
+        min-width: 115%;
+    } 
+    .contacts {
+        transform: scale(0.7);
+        transform-origin: left center;
+    } 
+}
+@media (max-width:465px) {
+    .cont , .contacts {
+        width: 100%;
+        min-width: 135%;
+    } 
+    .contacts {
+        margin-top: -20px;
+        transform: scale(0.6);
+        transform-origin: left center;
+    } 
+    .footer-main {
+        padding-left: 20px;
+    }
+}
+@media (max-width:386px) {
+    .cont , .contacts {
+        width: 100%;
+        min-width: 150%;
+    } 
+    .contacts {
+        margin-top: -20px;
+        transform: scale(0.5);
+        transform-origin: left center;
+    } 
+    .footer-main {
+    }
+}
+
+
+.logo-foot {
+    margin-left: -130px;
+}
+.cont div {
+    text-align: left;
+font-weight: 500;
+font-size: 27px;
+margin: 10px 0;
+transition: all 0.3s ease;
+
+}
+.cont div:hover {
+    color: #b1afaf
+}
+
+.cont::after {
+    width: 100%;
+    content: '';
+    height: 5px;
+    display: block;
+    background-color: #FFFF;
+    margin-top: 10px;
+    margin-bottom: 15px;
+   
+}
+
+.socials-link div {
+    cursor: pointer;
+    margin-right: 20px;
+}

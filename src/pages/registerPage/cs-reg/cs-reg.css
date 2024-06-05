@@ -14,6 +14,13 @@
    .subm-reg1 {
     display: block;
    }
+   .logo-kia {
+    display: none;
+   }
+   .reg-box {
+    margin-bottom: 50px;
+    margin-top: 50px;
+   }
    .left-reg, .right-reg {
     margin: auto 0;
 }

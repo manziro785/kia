@@ -1,91 +1,160 @@
-.wrapp-main-n {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .wrapper-calen-n {
-    position: relative;
-  }
-  
-  .events-calendar-n {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .calendar-header-n {
-    margin-bottom: 20px;
-  }
-  
-  .wrap-cal-n {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .events-slider-wrapper-n {
-    display: flex;
-    width: 100%;
-  }
-  
-  .events-slider-n {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .event-n {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .event-n img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-  
-  .photo-container1-n {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-  }
-  
-  .scroll-photo-n {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-  }
-  
-  .events-calendar1 {
-    width: 45%;
-    /* max-width: 1200px; */
-    text-align: center;
-  }
-  .box1 {
-    display: flex;
+.main-container-u {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden; /* Запретить вертикальную прокрутку */
+  width: 100%; /* Ширина контейнера для трех вложенных контейнеров */
+  transition: transform 0.3s ease; /* Плавное перемещение */
+  scroll-snap-type: x mandatory; /* Отображение элементов в виде точек привязки */
+  scroll-behavior: smooth; /* Плавная прокрутка */
+}
 
-  }
-  .right img {
-    width: 700px;
-  }
-  .ups span {
-    color: #B4002D;
+/* Скрытие полосы прокрутки */
+.main-container-u::-webkit-scrollbar {
+  display: none;
+}
+.main-container-u {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
+.main-u {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  }
-  .ups {
-    font-size: 70px;
-    font-weight: 800;
-  }
-  .dd {
-    font-size: 40px;
-    color: #ffff;
-  }
-  .left {
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 30px;
-  }
+}
+
+.container-u,
+.container-2-u,
+.container-3-u {
+  width: 100vw; /* Ширина контейнера равна ширине видимой части окна браузера */
+  flex-shrink: 0; /* Запрет на сжатие контейнеров */
+  scroll-snap-align: start; /* Выравнивание контейнеров по левому краю */
+}
+
+.container-u.active,
+.container-2-u.active,
+.container-3-u.active {
+  opacity: 1;
+}
+
+.header-u {
+  margin-left: 112px;
+  margin-top: 40px;
+  font-size: 70px;
+}
+
+.content-u {
+  margin-top: 110px;
+  margin-left: 112px;
+}
+.main-container-u {
+  margin: 40px;
+}
+
+.million-u {
+  font-size: 60px;
+  font-weight: 700;
+  align-items:center;
+  display: flex;
+}
+
+.info-u {
+  font-size: 40px;
+}
+
+.imh-u {
+  margin-top: 100px;
+  margin-right: 60px;
+  height: 430px;
+}
+
+.red-u {
+  color: red;
+}
+
+.container-u {
+  background: url(/svg/Phone.svg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.container-2-u,
+.container-3-u {
+  background: url(/svg/Phone.svg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: white;
+}
+
+.content-2-u {
+  margin-top: 260px;
+  margin-left: 148px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-2-u {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 85px;
+  font-weight: 600;
+}
+
+.info-2-u {
+  font-size: 44px;
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
+}
+
+.img-2-u {
+  margin-top: 75px;
+  margin-right: 130px;
+}
+
+.red-2-u {
+  font-size: 100px;
+  color: red;
+  margin-right: 30px;
+  font-weight: 800;
+}
+
+.content-3-u {
+  margin-left: 218px;
+  margin-top: 243px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-3-u {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  font-weight: 600;
+}
+
+.info-3-u {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.img-3-u {
+  margin-top: 131px;
+  margin-right: 105px;
+}
+
+.red-3-u {
+  color: red;
+  margin-right: 40px;
+}
