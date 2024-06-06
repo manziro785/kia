@@ -12,6 +12,7 @@ import FAQ from "../../components/questions/question";
 import Header from "../../components/header/header";
 import Calendar2 from "../../components/calendar2/calendar2";
 import "./mainPage.css";
+import Footer from "../../components/footer/footer";
 
 export default function MainPage() {
   return (
@@ -27,7 +28,7 @@ export default function MainPage() {
 
     <Car/>
     <Num/>
-    <div className="wrap-game-sec" style={{display: 'none'}}>
+    <div className="wrap-game-sec" >
     <GameSection/>
 
     </div>

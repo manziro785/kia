@@ -13,6 +13,15 @@ body {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 635px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .evSlider {
+    margin-top: 60px !important;
+  }
+  
+}
 
 .events-calendar {
   width: 100%;

@@ -209,7 +209,11 @@
   margin-bottom: -40px !important;
   }
 }
-
+@media (max-width: 648px) {
+  .gameSlider {
+    margin-top: 80px;
+  }
+}
 @media (max-width: 500px) {
   /* .background-layer {
      

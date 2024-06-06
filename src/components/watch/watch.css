@@ -23,7 +23,9 @@
     justify-content: space-between;
     gap: 1rem;
     border-radius: 5px;
-    height: 70vh;
+    height: 100vh;
+    align-items: center;
+    margin-top: -120px;
   }
   
   .video-container iframe {
@@ -44,6 +46,16 @@
     }
     .watch-container {
       height: 130vmax;
+    }
+    .video-container {
+        margin-top: 40px !important;
+        display: block;
+    }
+    .watch-title {
+        font-size: 30px !important;
+    }
+    .sponsors {
+        margin-top: 200px;
     }
   }
   
