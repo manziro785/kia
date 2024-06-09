@@ -83,15 +83,11 @@ export default function Calendar() {
             slidesPerView={1}
             spaceBetween={0}
             breakpoints={{
-              450: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-              },
               640: {
                 slidesPerView: 3,
                 spaceBetween: 10,
               },
-              768: {
+              850: {
                 slidesPerView: 4,
                 spaceBetween: 20,
               },

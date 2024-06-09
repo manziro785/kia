@@ -63,77 +63,61 @@ const events = [
 ];
 
 function Num() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const containers = document.querySelectorAll('.main-container-u > div');
-
-    function showCurrentContainer() {
-      containers.forEach((container, index) => {
-        if (index === currentIndex) {
-          container.classList.add('active');
-        } else {
-          container.classList.remove('active');
-        }
-      });
-    }
-
-    function nextContainer() {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % containers.length);
-      const containerWidth = containers[0].offsetWidth;
-      const newPosition = (currentIndex + 1) % containers.length * containerWidth;
-      document.querySelector('.main-container-u').scrollLeft = newPosition;
-      showCurrentContainer();
-    }
-
-    const intervalId = setInterval(nextContainer, 1000000);
-
-    showCurrentContainer();
-
-    return () => clearInterval(intervalId);
-  }, [currentIndex]);
-
   return (
-    <div className="main-container-u">
-      <div className="container-u" >
-        <div className="main-u">
-          {/* <div className="header-u">ТУРНИР В ЦИФРАХ</div> */}
-          <div className="content-u">
-            
-            <div className="million-u">
-              <span className="red-u">1 000  000</span> сом
+    <>
+      <div className="containerr">
+        <h1 style={{ fontSize: "2rem" }}>ТУРНИР В ЦИФРАХ</h1>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={0}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Navigation, Pagination, A11y]}
+        >
+          <SwiperSlide>
+            <div className="box1">
+              <div className="left">
+                <div className="ups">
+                  <span>1 000 000</span> сом
+                </div>
+                <div className="dd">Призовой фонд турнира</div>
+              </div>
+              <div className="right">
+                <img src={imm2} alt="" />
+              </div>
             </div>
-            <div className="info-u">Призовой фонд турнира</div>
-
-          </div>
-        </div>
-        <div className="imh-u">
-          <img src={firstimg} alt="" />
-        </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="box1">
+              <div className="left">
+                <div className="ups">
+                  <span>50</span> команд
+                </div>
+                <div className="dd">500+ участников </div>
+              </div>
+              <div className="right">
+                <img src={imm3} alt="" />
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="box1">
+              <div className="left">
+                <div className="ups">
+                  <span>25</span> +
+                </div>
+                <div className="dd">Спонсоров</div>
+              </div>
+              <div className="right">
+                <img src="./src/assets/corusel/1.2.svg" alt="" />
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
-      <div className="container-2-u">
-        <div className="content-2-u">
-          <div className="header-2-u">
-            <span className="red-u">50</span> команд
-          </div>
-          <div className="info-2-u">500+ участников</div>
-        </div>
-        <div className="img-2-u">
-          <img src={secondimg} alt="" />
-        </div>
-      </div>
-      <div className="container-3-u">
-        <div className="content-3-u">
-          <div className="header-3-u">
-            <span className="red-3-u">25</span> +
-          </div>
-          <div className="info-3-u">СПОНСОРОВ</div>
-        </div>
-        <div className="img-3-u">
-          <img src={thirdimg} alt="" />
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
 

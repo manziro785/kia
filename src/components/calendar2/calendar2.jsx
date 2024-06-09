@@ -34,11 +34,11 @@ const Calendar2 = () => {
               slidesPerView={1}
               spaceBetween={50}
               breakpoints={{
-                430: {
+                500: {
                   slidesPerView: 2,
                   spaceBetween: 30,
                 },
-                640: {
+                650: {
                   slidesPerView: 3,
                   spaceBetween: 30,
                 },
@@ -77,36 +77,7 @@ const Calendar2 = () => {
               <SwiperSlide className="game-card">
                 <img src={img6} alt="" className="swpimg" />
               </SwiperSlide>
-              {/* <SwiperSlide className="game-card">
-                <img src={cs2} alt="" className="swpimg" />
-                <a href="/register-cs" className="participate-button">
-                  Участвовать
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="game-card">
-                <img src={dota} alt="" className="swpimg" />
-                <a href="/register-dota" className="participate-button">
-                  Участвовать
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="game-card">
-                <img src={pubg} alt="" className="swpimg" />
-                <a href="/register" className="participate-button">
-                  Участвовать
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="game-card">
-                <img src={cs2} alt="" className="swpimg" />
-                <a href="/register" className="participate-button">
-                  Участвовать
-                </a>
-              </SwiperSlide>
-              <SwiperSlide className="game-card">
-                <img src={dota} alt="" className="swpimg" />
-                <a href="/register" className="participate-button">
-                  Участвовать
-                </a>
-              </SwiperSlide> */}
+
               <Btnswp />
             </Swiper>
             <a href="/register" className="participate-button">
