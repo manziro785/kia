@@ -1,25 +1,44 @@
 import React from "react";
 import "./car.css";
-import d1 from "../../assets/car/Frame 17 (3).svg";
-import d2 from "../../assets/car/kiiia 1.svg";
-import bgcarvideo from "../../assets/car/video.mp4";
+
+import d1 from "../../assets/car/Frame 1 (1).svg";
+import d2 from "../../assets/car/kia-ev9-car-04 1.svg";
+import bgcar from "../../assets/car back.svg";
 
 export default function Car() {
   return (
-    <div className="wrapp-car" id="car">
-      <video autoPlay loop muted className="background-video">
-        <source src={bgcarvideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className="overlayy"></div> 
-      <div className="container-car">
-        <div className="title-car">
-          <img src={d1} alt="" />
-        </div>
-        <div className="car-content">
-          <div className="car-text">
-            <div>
-              На нашем киберспортивном турнире мы с гордостью будем использовать инновационный электромобиль KIA EV9.
+    <div>
+      {" "}
+      <div className="title-car">
+        <img src={d1} alt="" />
+      </div>
+      <div
+        className="wrapp-car"
+        id="car"
+        style={{ backgroundImage: `url(${bgcar})` }}
+      >
+        <div className="coneiner-car">
+          <div className="car-content">
+            <div className="car-text">
+              <div>
+                На нашем киберспортивном турнире мы с гордостью будем
+                использовать инновационный электромобиль KIA EV9.
+              </div>
+              <div>
+                Этот передовой автомобиль способен раздавать электричество, что
+                позволяет нам питать компьютеры и оборудование прямо с его
+                батареи. Благодаря KIA EV9, мы обеспечим стабильное и надежное
+                энергоснабжение, необходимое для бесперебойного проведения
+                соревнований.
+              </div>
+              <div id="abs3">
+                Кроме того, использование электромобиля снижает углеродный след
+                и способствует защите окружающей среды. Kia EV9 предоставляет
+                нам гибкость в организации турниров, позволяя проводить
+                мероприятия в любых местах без привязки к стационарным
+                источникам энергии.
+              </div>
+              {/* <div>Кроме того, использование электромобиля снижает углеродный след и способствует защите окружающей среды. KIA EV9 предоставляет нам гибкость в организации турниров, позволяя проводить мероприятия в любых местах без привязки к стационарным источникам энергии.</div> */}
             </div>
             <div>
               Этот передовой автомобиль способен раздавать электричество, что позволяет нам питать компьютеры и оборудование прямо с его батареи. Благодаря KIA EV9, мы обеспечим стабильное и надежное энергоснабжение, необходимое для бесперебойного проведения соревнований.

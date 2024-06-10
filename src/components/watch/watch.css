@@ -1,71 +1,62 @@
 .watch-container {
-    background: #2b1028;
-    padding: 20px;
-    text-align: left;
-    width: 90%;
-    margin: 0 auto;
+  background: #2b1028;
+  padding: 20px;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.watch-title {
+  color: white;
+  text-align: left;
+}
+
+.watch-title span {
+  color: red;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 5px;
+}
+
+.video-container iframe {
+  border-radius: 15px;
+  width: 30%;
+  height: 33%;
+}
+
+@media (max-width: 1024px) {
+  .video-container iframe {
+    width: calc(50% - 20px);
   }
-  
-  .watch-title {
-    color: white;
-    text-align: left;
-    font-size: 60px;
-  }
-  
-  .watch-title span {
-    color: red;
-  }
-  
+}
+@media (max-width: 648px) {
   .video-container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    border-radius: 5px;
-    height: 100vh;
+
+    flex-direction: column;
     align-items: center;
-    margin-top: -120px;
+    justify-content: center;
   }
-  
   .video-container iframe {
-    border-radius: 15px;
-    width: 30%;
-    height: 33%;
+    width: 60%;
+    height: 50%;
   }
-  
-  @media (max-width: 1024px) {
-    .video-container iframe {
-      width: calc(50% - 20px);
-    }
+}
+@media (max-width: 768px) {
+  .watch-title {
+    text-align: center;
   }
-  @media (max-width: 648px) {
-    .video-container iframe {
-      width: 100%;
-      height: 50%;
-    }
-    .watch-container {
-      height: 130vmax;
-    }
-    .video-container {
-        margin-top: 40px !important;
-        display: block;
-    }
-    .watch-title {
-        font-size: 30px !important;
-    }
-    .sponsors {
-        margin-top: 200px;
-    }
+
+}
+
   }
-  
-  @media (max-width: 430px) {
-    .video-container iframe {
-      height: 30%;
-    }
-    .watch-container {
-      height: 90vmax;
-      padding: 0;
-    }
+  .watch-container {
+    padding: 0;
   }
-  
+}

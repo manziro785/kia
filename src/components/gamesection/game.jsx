@@ -17,7 +17,7 @@ const GameSection = () => {
       <div className="background-layer">
         <div className="gradient-overlay"></div>
         <div className="content-layer">
-          <h2>Игровые дисциплины</h2>
+          <h1 className="igrh1">Игровые дисциплины</h1>
           <div className="gameSlider">
             <Swiper
               slidesPerView={1}

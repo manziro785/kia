@@ -34,7 +34,7 @@ export default function Footer() {
             <div className="contacts">
               <div className="cont">
                 <div className="tittle-foot">
-                  Для связи по комерческим вопросам
+                  Для связи по коммерческим вопросам:
                 </div>
                 <div
                   style={{ cursor: "pointer" }}

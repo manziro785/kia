@@ -20,19 +20,10 @@ export default function MainPage() {
     <>
       <Header />
       <Banner />
-      <div className="wrap-calendar-sec">
-        <Calendar />
-      </div>
-      <div className="wrap-calendar2-sec" style={{ display: "none" }}>
-        <Calendar2 />
-      </div>
-
+      <Calendar />
       <Car />
       <Num />
-      <div className="wrap-game-sec" style={{ display: "none" }}>
-        <GameSection />
-      </div>
-      <div className="wrap-game-sec2">{/* <GameSection2/> */}</div>
+      <GameSection />
       <Watch />
       <Partners />
       <FAQ />

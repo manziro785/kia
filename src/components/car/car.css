@@ -4,10 +4,24 @@
   height: 100vh;
   overflow: hidden;
   display: flex;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
   color: white; /* Цвет текста для контраста с видео */
 }
+
+
+.coneiner-car {
+  padding: 60px;
+}
+.wrapp-car {
+  /* background-image: url(/src/assets/car\ back.svg); */
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 3rem;
+
 
 .background-video {
   position: absolute;
@@ -17,6 +31,7 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+
 }
 
 .overlayy {
@@ -47,18 +62,32 @@
 .car-content {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
+  padding: 100px 0;
 }
 
 .car-text {
-  width: 60%;
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.car-img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .car-text div {
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1rem;
+
+  color: white;
   margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .car-img img {
@@ -69,11 +98,14 @@
   .car-text div {
     font-size: 12px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 16px;
   }
   .car-img {
-    width: 50%;
+    width: 40%;
+  }
+  #abs3 {
+    display: none;
   }
 }
 
@@ -81,7 +113,7 @@
   .car-text div {
     font-size: 16px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 10px;
   }
   .car-text {
@@ -94,17 +126,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    padding: 0;
   }
+  /* .wrapp-car {
+    height: 10vh;
+  } */
 }
 
 @media (max-width: 485px) {
-  .car-text div {
-    font-size: 12px;
-    color: #ffffff;
-    font-weight: 700;
-    margin-bottom: 6px;
+  .coneiner-car {
+    padding: 2rem;
   }
+
+
   .car-text {
     width: 100%;
   }
@@ -120,8 +154,9 @@
 }
 
 @media (max-width: 360px) {
+
   .car-text div {
-    font-size: 8px;
+    font-size: 12px;
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 4px;
@@ -130,6 +165,7 @@
     width: 100%;
   }
   .car-img {
+    margin-top: 1rem;
     width: 100%;
   }
   .car-content {

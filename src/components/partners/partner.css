@@ -1,77 +1,80 @@
 .sponsors {
-    padding: 20px 0;
-    background: #2B1028;
+  padding: 20px 0;
+  background: #2b1028;
 }
 
 .title {
-    color: white;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 80px;
+  color: white;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 80px;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .sponsor-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
 }
 
 .sponsor-item {
-    flex: 1 1 calc(25% - 20px); /* Рассчитывает ширину элементов, чтобы они равномерно распределялись */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 288px;
-    text-align: center; /* Center align the text */
+  flex: 1 1 calc(25% - 20px); /* Рассчитывает ширину элементов, чтобы они равномерно распределялись */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 288px;
+  text-align: center; /* Center align the text */
+  margin: 0 auto;
 }
 
 .sponsor-image {
-    max-height: 96px;
-    max-width: 100%;
-    margin-bottom: 10px; /* Add some space between the image and the text */
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px; /* Add some space between the image and the text */
 }
 
 .sponsor-name {
-    color: white;
-    width: 100%;
-    font-weight: bold;
-    font-size: 1rem;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 /* Адаптивные стили */
 @media (max-width: 768px) {
-    .title {
-        font-size: 2rem;
-    }
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-    .sponsor-item {
-        flex: 1 1 calc(50% - 20px);
-    }
+  .sponsor-item {
+    flex: 1 1 calc(50% - 20px);
+  }
 
-    .sponsor-name {
-        font-size: 0.9rem;
-    }
+  .sponsor-name {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .title {
-        font-size: 1.5rem;
-    }
+  .title {
+    font-size: 1.5rem;
+  }
 
-    .sponsor-item {
-        flex: 1 1 30%;
-    }
+  .sponsor-item {
+    flex: 1 1 30%;
+  }
 
-    .sponsor-name {
-        font-size: 0.8rem;
-    }
+  .sponsor-name {
+    font-size: 0.8rem;
+  }
 }

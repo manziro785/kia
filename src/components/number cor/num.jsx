@@ -66,8 +66,17 @@ function Num() {
   return (
     <>
       <div className="containerr">
-        <h1 style={{ fontSize: "2rem" }}>ТУРНИР В ЦИФРАХ</h1>
+        <h1
+          style={{
+            fontSize: "2rem",
+            textAlign: "left",
+          }}
+        >
+          ТУРНИР В ЦИФРАХ
+        </h1>
         <Swiper
+          loop={true}
+          freeMode={true}
           slidesPerView={1}
           spaceBetween={0}
           autoplay={{
@@ -106,12 +115,12 @@ function Num() {
             <div className="box1">
               <div className="left">
                 <div className="ups">
-                  <span>25</span> +
+                  <span>25</span>+
                 </div>
                 <div className="dd">Спонсоров</div>
               </div>
               <div className="right">
-                <img src="./src/assets/corusel/1.2.svg" alt="" />
+                <img src={imm3} alt="" />
               </div>
             </div>
           </SwiperSlide>
