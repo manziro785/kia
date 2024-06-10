@@ -54,7 +54,7 @@ const Partners = () => {
   return (
     <div>
       <section className="sponsors" id="sponsors">
-        <div className="container">
+        <div className="containerr">
           <h1 className="title">Спонсоры</h1>
           {/* <div className="sponsor-container"> */}
           <Swiper
@@ -99,7 +99,9 @@ const Partners = () => {
                 <a href="https://alatoo.edu.kg/">
                   <img src={ala} className="sponsor-image" alt="Ала-Тоо" />
                 </a>
-                <div className="sponsor-name">Ала-Тоо</div>
+                <div className="sponsor-name">
+                  Международный университет "Ала-Тоо"
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -113,7 +115,7 @@ const Partners = () => {
                   />
                 </a>
                 <div className="sponsor-name">
-                  Министерство цифрового развития Кыргызстана
+                  Министерство цифрового развития Кыргызской Республики
                 </div>
               </div>
             </SwiperSlide>
@@ -122,7 +124,9 @@ const Partners = () => {
                 <a href="https://www.kia-bishkek.kg/">
                   <img src={kiaorig} className="sponsor-image" alt="KIA" />
                 </a>
-                <div className="sponsor-name">Movement that inspires</div>
+                <div className="sponsor-name">
+                  Официальный дистрибьютор Kia в Кыргызстане
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -131,10 +135,10 @@ const Partners = () => {
                   <img src={flag} className="sponsor-image" alt="Flag" />
                 </a>
                 <div className="sponsor-name">
-                  Федерация Компьютерного Спорта
+                  Федерация Компьютерного Спорта Кыргызской Республики
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide>{" "}
           </Swiper>
         </div>
         {/* </div> */}

@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from "react";
 import "./car.css";
 import d1 from "../../assets/car/Frame 1 (1).svg";
-import d2 from "../../assets/car/kiiia 1.svg";
+import d2 from "../../assets/car/kia-ev9-car-04 1.svg";
 import bgcar from "../../assets/car back.svg";
 
 export default function Car() {
   return (
     <div>
+      {" "}
+      <div className="title-car">
+        <img src={d1} alt="" />
+      </div>
       <div
         className="wrapp-car"
         id="car"
         style={{ backgroundImage: `url(${bgcar})` }}
       >
         <div className="coneiner-car">
-          <div className="title-car">
-            <img src={d1} alt="" />
-          </div>
           <div className="car-content">
             <div className="car-text">
               <div>
@@ -28,6 +29,13 @@ export default function Car() {
                 батареи. Благодаря KIA EV9, мы обеспечим стабильное и надежное
                 энергоснабжение, необходимое для бесперебойного проведения
                 соревнований.
+              </div>
+              <div id="abs3">
+                Кроме того, использование электромобиля снижает углеродный след
+                и способствует защите окружающей среды. Kia EV9 предоставляет
+                нам гибкость в организации турниров, позволяя проводить
+                мероприятия в любых местах без привязки к стационарным
+                источникам энергии.
               </div>
               {/* <div>Кроме того, использование электромобиля снижает углеродный след и способствует защите окружающей среды. KIA EV9 предоставляет нам гибкость в организации турниров, позволяя проводить мероприятия в любых местах без привязки к стационарным источникам энергии.</div> */}
             </div>

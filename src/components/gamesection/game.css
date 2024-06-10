@@ -102,10 +102,14 @@
   transform: scale(1.05);
   filter: brightness(70%);
 }
-
+.igrh1 {
+  text-align: left;
+  margin-bottom: 3rem;
+}
 .participate-button,
 .participate-button1 {
-  width: 10rem;
+  font-size: 2rem;
+  width: 17rem;
   position: absolute;
   top: 66%;
   margin-left: auto;
@@ -126,7 +130,13 @@
 .participate-button1 {
   display: block;
 }
-
+@media (max-width: 1900px) {
+  .participate-button,
+  .participate-button1 {
+    width: 10rem;
+    font-size: 1rem;
+  }
+}
 @media (max-width: 1130px) {
   .participate-button,
   .participate-button1 {
@@ -134,7 +144,7 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
   .content-layer h2 {
     font-size: 48px; /* Adjust the font size for smaller screens */
   }
@@ -146,9 +156,9 @@
     width: 5rem;
     font-size: 10px;
   }
-  .game-section {
+  /* .game-section {
     height: 50vh;
-  }
+  } */
 }
 @media (max-width: 860px) {
   .content-layer h2 {
@@ -174,6 +184,9 @@
     align-items: center;
     flex-wrap: wrap;
   }
+  .igrh1 {
+    text-align: center;
+  }
   .btnGame {
     display: block !important;
   }
@@ -197,7 +210,6 @@
   .game-section {
     margin-top: 0;
 
-    height: 80vh;
     width: auto;
   }
   .game-card {
@@ -206,7 +218,7 @@
   }
 
   .content-layer h2 {
-  margin-bottom: -40px !important;
+    margin-bottom: -40px !important;
   }
 }
 
@@ -251,7 +263,7 @@
   }
   .content-layer h2 {
     font-size: 28px; /* Adjust the font size for smaller screens */
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
   .participate-button {
     width: 5rem;

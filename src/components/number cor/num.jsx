@@ -66,7 +66,14 @@ function Num() {
   return (
     <>
       <div className="containerr">
-        <h1 style={{ fontSize: "2rem" }}>ТУРНИР В ЦИФРАХ</h1>
+        <h1
+          style={{
+            fontSize: "2rem",
+            textAlign: "left",
+          }}
+        >
+          ТУРНИР В ЦИФРАХ
+        </h1>
         <Swiper
           loop={true}
           freeMode={true}
