@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './timer.css';
+import React, { useEffect, useState } from "react";
+import "./timer.css";
 
 export default function Timer() {
   const [time, setTime] = useState({
@@ -11,7 +11,7 @@ export default function Timer() {
 
   useEffect(() => {
     const countdown = () => {
-      const countDate = new Date('Jun 10, 2024 00:00:00').getTime();
+      const countDate = new Date("Jun 15, 2024 00:00:00").getTime();
       const now = new Date().getTime();
       const gap = countDate - now;
 
@@ -44,16 +44,24 @@ export default function Timer() {
       <section className="timer-n">
         <div className="countdown-n">
           <div>
-            <span id="days">{formatNumber(time.days)}</span><span className='doub'>:</span> <span className='sapn-tt'>дней</span>
+            <span id="days">{formatNumber(time.days)}</span>
+            <span className="doub">:</span>{" "}
+            <span className="sapn-tt">дней</span>
           </div>
           <div>
-            <span id="hours">{formatNumber(time.hours)}</span> <span className='doub'>:</span> <span className='sapn-tt'>часов</span>
+            <span id="hours">{formatNumber(time.hours)}</span>{" "}
+            <span className="doub">:</span>{" "}
+            <span className="sapn-tt">часов</span>
           </div>
           <div>
-            <span id="minutes">{formatNumber(time.minutes)}</span><span className='doub'>:</span> <span className='sapn-tt'>минут</span>
+            <span id="minutes">{formatNumber(time.minutes)}</span>
+            <span className="doub">:</span>{" "}
+            <span className="sapn-tt">минут</span>
           </div>
           <div>
-            <span id="seconds">{formatNumber(time.seconds)}</span> <span className='doub'></span><span className='sapn-tt'>секунд</span>
+            <span id="seconds">{formatNumber(time.seconds)}</span>{" "}
+            <span className="doub"></span>
+            <span className="sapn-tt">секунд</span>
           </div>
         </div>
       </section>
