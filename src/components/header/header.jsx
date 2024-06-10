@@ -5,10 +5,11 @@ import burger from '../../assets/header/burger.svg'
 
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(true);
+const [menuOpen, setMenuOpen] = useState(true);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setIsVisible(!isVisible);
   };
 
   const [isVisible, setIsVisible] = useState(false);
@@ -61,10 +62,10 @@ export default function Header() {
                 <div className="header-link" style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('car'), 1000)}>ОБЩАЯ ИНФОРМАЦИЯ</div>
               </li>
               <li className="header-item">
-                <div className="header-link" style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('game'), 1000)}>СМОТРЕТЬ</div>
+                <div className="header-link" style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('streams'), 1000)}>СМОТРЕТЬ</div>
               </li>
               <li className="header-item">
-                <div className="header-link" style={{cursor: 'pointer'}} >УЧАСТНИКИ</div>
+                <div className="header-link" style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('motiv'), 1000)} >УЧАСТНИКИ</div>
               </li>
               <li className="header-item">
                 <div className="header-link" style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('footer'), 1000)}>СВЯЗАТЬСЯ С НАМИ</div>
@@ -93,11 +94,11 @@ export default function Header() {
           </div>
           </div>
           <div className="custom-tooltip">
-            <img src={burger} alt="Mini Photo" className="mini-photo" id="person" />
+            <img src={burger}  onClick={toggleMenu}  alt="Mini Photo" className="mini-photo" id="person" />
               <div className="tooltiptext">
                 <div className='burger-item' style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('car'), 1000)}>ОБЩАЯ ИНФОРМАЦИЯ</div>
-                <div className='burger-item' style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('game'), 1000)}>СМОТРЕТЬ</div>
-                <div className='burger-item'style={{cursor: 'pointer'}} >УЧАСТНИКИ</div>
+                <div className='burger-item' style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('streams'), 1000)}>СМОТРЕТЬ</div>
+                <div className='burger-item'style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('motiv'), 1000)}>УЧАСТНИКИ</div>
                 <div className='burger-item' style={{cursor: 'pointer'}} onClick={() => scrollToElement(document.getElementById('footer'), 1000)}>СВЯЗАТЬСЯ С НАМИ</div>
               </div>
           </div>

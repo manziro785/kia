@@ -13,6 +13,7 @@ import Header from "../../components/header/header";
 import Calendar2 from "../../components/calendar2/calendar2";
 import Footer from "../../components/footer/footer";
 import "./mainPage.css";
+// import Footer from "../../components/footer/footer";
 
 export default function MainPage() {
   return (
@@ -27,6 +28,7 @@ export default function MainPage() {
       <Partners />
       <FAQ />
       <Footer />
+
     </>
   );
 }
