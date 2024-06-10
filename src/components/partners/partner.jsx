@@ -55,7 +55,7 @@ const Partners = () => {
     <div>
       <section className="sponsors" id="sponsors">
         <div className="containerr">
-          <h1 className="title">Спонсоры</h1>
+          <h1 className="title">Партнеры</h1>
           {/* <div className="sponsor-container"> */}
           <Swiper
             slidesPerView={1}
