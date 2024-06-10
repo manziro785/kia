@@ -9,14 +9,14 @@ export default function Car() {
   return (
     <div>
       {" "}
-      <div className="title-car">
-        <img src={d1} alt="" />
-      </div>
+      
       <div
         className="wrapp-car"
         id="car"
         style={{ backgroundImage: `url(${bgcar})` }}
-      >
+      ><div className="title-car">
+        <img src={d1} alt="" />
+      </div>
         <div className="coneiner-car">
           <div className="car-content">
             <div className="car-text">
