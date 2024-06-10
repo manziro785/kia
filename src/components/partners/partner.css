@@ -33,6 +33,7 @@
   justify-content: space-between;
   max-width: 288px;
   text-align: center; /* Center align the text */
+  margin: 0 auto;
 }
 
 .sponsor-image {

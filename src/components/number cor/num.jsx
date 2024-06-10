@@ -68,6 +68,8 @@ function Num() {
       <div className="containerr">
         <h1 style={{ fontSize: "2rem" }}>ТУРНИР В ЦИФРАХ</h1>
         <Swiper
+          loop={true}
+          freeMode={true}
           slidesPerView={1}
           spaceBetween={0}
           autoplay={{
