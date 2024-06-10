@@ -11,7 +11,7 @@ export default function Banner() {
     <div>
       {/* <Header/> */}
 
-      <main className="banner" style={{ backgroundImage: `url(${bgasia})` }}>
+      <main className="banner" style={{ background: `url(${bgasia})` }}>
         {/* <div className="title-mm"></div> */}
         <div className="sanarip-img">
           <img className="sanarip" src={sp} />

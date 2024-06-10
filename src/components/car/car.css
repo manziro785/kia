@@ -13,6 +13,7 @@
   background-repeat: no-repeat;
   width: 100vw;
   background-position: center;
+  background-size: 100%;
 }
 .car-img img {
   width: 100%;

@@ -28,7 +28,7 @@ const Calendar2 = () => {
       <div className="background-layer">
         <div className="gradient-overlay"></div>
         <div className="content-layer">
-          <h2>Календарь событий</h2>
+          <h2>КАЛЕНДАРЬ СОБЫТИЙ</h2>
           <div className="evSlider">
             <Swiper
               slidesPerView={1}

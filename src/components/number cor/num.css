@@ -26,10 +26,35 @@
   justify-content: space-evenly;
   width: 90%;
   margin: 0 auto;
+  padding: 1rem 0;
 }
 @media screen and (max-width: 1024px) {
   .box1 {
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box1 {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .box1 {
+    height: 18rem;
+  }
+  .dd {
+    font-size: 20px;
+  }
+  .ups {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .box1 {
+    height: 15rem;
   }
 }
 @media screen and (max-width: 320px) {

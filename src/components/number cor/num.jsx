@@ -106,12 +106,12 @@ function Num() {
             <div className="box1">
               <div className="left">
                 <div className="ups">
-                  <span>25</span> +
+                  <span>25</span>+
                 </div>
                 <div className="dd">Спонсоров</div>
               </div>
               <div className="right">
-                <img src="./src/assets/corusel/1.2.svg" alt="" />
+                <img src={imm3} alt="" />
               </div>
             </div>
           </SwiperSlide>
