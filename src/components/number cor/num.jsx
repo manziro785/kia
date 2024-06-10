@@ -38,7 +38,7 @@ function Num() {
 
   return (
     <>
-                     <h1 className='title-bum' style={{marginTop: '6rem', marginLeft: '8rem', fontSize: '3rem', marginBottom: '0'}}>ТУРНИР В ЦИФРАХ</h1> 
+                     <h1 className='title-bum'  id='motiv' style={{marginTop: '6rem', marginLeft: '8rem', fontSize: '3rem', marginBottom: '0'}}>ТУРНИР В ЦИФРАХ</h1> 
 
     <div className="main-container-u">
 

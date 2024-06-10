@@ -13,7 +13,7 @@ export default function Banner() {
 
       <main className="banner" style={{ backgroundImage: `url(${bgasia})` }}>
         {/* <div className="title-mm"></div> */}
-        <div className="sanarip-img">
+        <div className="sanarip-img">        
           <img className="sanarip" src={sp} />
         </div>
         <div className="tt">
