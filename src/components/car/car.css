@@ -84,8 +84,7 @@
 
 .car-text div {
   font-weight: 600;
-  font-size: 1rem;
-
+  font-size: 2rem;
   color: white;
   margin-bottom: 20px;
   text-align: justify;
@@ -98,7 +97,9 @@
 .info-car {
   width: 100%;
 }
-
+#abs3 {
+  color: #b4002d;
+}
 .text-car {
   padding-left: 60px;
   margin-top: 70px;
@@ -107,6 +108,17 @@
 .photo-container2 img {
   width: 100%;
 }
+@media (max-width: 2000px) {
+  .car-text div {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1500px) {
+  .car-text div {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 1100px) {
   .car-text div {
     font-size: 12px;
@@ -116,9 +128,6 @@
   }
   .car-img {
     width: 40%;
-  }
-  #abs3 {
-    display: none;
   }
 }
 
@@ -141,9 +150,9 @@
     align-items: center;
     padding: 0;
   }
-  /* .wrapp-car {
-    height: 10vh;
-  } */
+  .wrapp-car {
+    background-size: cover;
+  }
 }
 
 @media (max-width: 485px) {

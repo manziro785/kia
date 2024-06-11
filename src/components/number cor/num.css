@@ -179,11 +179,12 @@
   color: #b4002d;
 }
 .ups {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Kia Bold";
 }
 .dd {
-  font-size: 40px;
+  font-size: 2rem;
   color: #ffff;
 }
 .left {
@@ -229,11 +230,9 @@
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 375px) {
-  .box1 {
-    /* height: 15rem; */
-  }
-}
+/* @media screen and (max-width: 375px) {
+
+} */
 @media screen and (max-width: 320px) {
   .box1 {
     flex-direction: column-reverse;

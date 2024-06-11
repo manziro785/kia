@@ -98,7 +98,9 @@ export default function Calendar() {
                   <img src={item.img} alt="" className="swpimg" />
                 </SwiperSlide>
               ))}
-              <Btnswp />
+              <div className="btncalen">
+                <Btnswp />
+              </div>
             </Swiper>
           </div>
         </div>
