@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./num.css";
-import imm from "../../assets/corusel/prize.png";
+import imm from "../../assets/corusel/prize.svg";
 
-import imm2 from "../../assets/corusel/50 team.png";
-import imm3 from "../../assets/corusel/partnerses.png";
+import imm2 from "../../assets/corusel/50 team.svg";
+import imm3 from "../../assets/corusel/partnerses.svg";
 import { Autoplay, Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -117,7 +117,7 @@ function Num() {
                 <div className="ups">
                   <span>35</span>+
                 </div>
-                <div className="dd">Спонсоров</div>
+                <div className="dd">НАШИ ПАРТНЁРЫ</div>
               </div>
               <div className="right">
                 <img src={imm3} alt="" />

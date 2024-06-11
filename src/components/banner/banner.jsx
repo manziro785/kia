@@ -4,16 +4,16 @@ import Header from "../header/header";
 import dd from "../../assets/car/Kia tittle.svg";
 import Timer from "../timer/timer";
 import sp from "../../assets/banner/sanarip.svg";
-import bgasia from "../../assets/asiamall beck.svg";
+import bgpark from "../../assets/Rectangle 1.svg";
 
 export default function Banner() {
   return (
     <div>
       {/* <Header/> */}
 
-      <main className="banner" style={{ background: `url(${bgasia})` }}>
+      <main className="banner" style={{ background: `url(${bgpark})` }}>
         {/* <div className="title-mm"></div> */}
-        <div className="sanarip-img">        
+        <div className="sanarip-img">
           <img className="sanarip" src={sp} />
         </div>
         <div className="tt">

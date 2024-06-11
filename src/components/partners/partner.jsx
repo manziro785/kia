@@ -55,11 +55,11 @@ const Partners = () => {
     <div>
       <section className="sponsors" id="sponsors">
         <div className="containerr">
-          <h1 className="title">Партнеры</h1>
+          <h1 className="title">НАШИ ПАРТНЁРЫ</h1>
           {/* <div className="sponsor-container"> */}
           <Swiper
             slidesPerView={1}
-            spaceBetween={0}
+            spaceBetween={10}
             autoplay={{
               delay: 1000,
               disableOnInteraction: false,
@@ -69,15 +69,15 @@ const Partners = () => {
             breakpoints={{
               425: {
                 slidesPerView: 2,
-                spaceBetween: 0,
+                spaceBetween: 10,
               },
               650: {
                 slidesPerView: 3,
-                spaceBetween: 0,
+                spaceBetween: 10,
               },
-              768: {
+              1024: {
                 slidesPerView: 4,
-                spaceBetween: 0,
+                spaceBetween: 20,
               },
               // 860: {
               //   slidesPerView: 4,

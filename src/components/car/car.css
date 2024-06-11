@@ -1,15 +1,10 @@
-.wrapp-car {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+.title-car {
   display: flex;
   margin-top: 100px;
   justify-content: center;
-  align-items: center;
-  color: white; /* Цвет текста для контраста с видео */
+  /* margin-top: 100px; */
+  /* padding-top: px; */
 }
-
 
 .coneiner-car {
   padding: 60px;
@@ -21,7 +16,7 @@
   background-position: center;
   background-size: 100%;
   margin-bottom: 3rem;
-
+}
 
 .background-video {
   position: absolute;
@@ -31,7 +26,6 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-
 }
 
 .overlayy {
@@ -40,8 +34,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #2b1028, #2b1028, rgba(43, 16, 40, 0.46),#2b1028, #2b1028);
-    z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    #2b1028,
+    #2b1028,
+    rgba(43, 16, 40, 0.46),
+    #2b1028,
+    #2b1028
+  );
+  z-index: -1;
 }
 
 .container-car {
@@ -53,10 +54,11 @@
   text-align: center;
   padding: 20px;
 }
-
+.car-img img {
+  width: 100%;
+}
 .title-car img {
-  max-width: 100%;
-  height: auto;
+  width: 80%;
 }
 
 .car-content {
@@ -93,7 +95,18 @@
 .car-img img {
   width: 100%;
 }
+.info-car {
+  width: 100%;
+}
 
+.text-car {
+  padding-left: 60px;
+  margin-top: 70px;
+}
+
+.photo-container2 img {
+  width: 100%;
+}
 @media (max-width: 1100px) {
   .car-text div {
     font-size: 12px;
@@ -138,7 +151,6 @@
     padding: 2rem;
   }
 
-
   .car-text {
     width: 100%;
   }
@@ -154,7 +166,6 @@
 }
 
 @media (max-width: 360px) {
-
   .car-text div {
     font-size: 12px;
     color: #ffffff;

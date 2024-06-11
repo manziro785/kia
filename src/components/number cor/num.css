@@ -10,23 +10,25 @@
 .container-u,
 .container-2-u,
 .container-3-u {
-padding-left: 40px !important;
-
+  padding-left: 40px !important;
 }
 
 .main-u {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
-.img-2-u img, .img-3-u img, .imh-u img {
+.img-2-u img,
+.img-3-u img,
+.imh-u img {
   width: 80%;
 }
-.img-2-u , .img-3-u , .imh-u  {
-display: flex;
-align-items:center;
-justify-content: center;
+.img-2-u,
+.img-3-u,
+.imh-u {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-u,
@@ -60,7 +62,7 @@ justify-content: center;
 .million-u {
   font-size: 60px;
   font-weight: 700;
-  align-items:center;
+  align-items: center;
   display: flex;
 }
 
@@ -163,10 +165,15 @@ justify-content: center;
   color: red;
   margin-right: 40px;
 }
-
-
+/* .left {
+  width: 40%;
+}
+.right {
+  width: 60%;
+} */
 .right img {
   width: 100%;
+  height: 30vmax;
 }
 .ups span {
   color: #b4002d;
@@ -205,12 +212,15 @@ justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .box1 {
-    height: 25rem;
+    height: 30rem;
+  }
+  .right img {
+    height: 40vmax;
   }
 }
 @media screen and (max-width: 425px) {
   .box1 {
-    height: 18rem;
+    height: 25rem;
   }
   .dd {
     font-size: 20px;
@@ -221,16 +231,17 @@ justify-content: center;
 }
 @media screen and (max-width: 375px) {
   .box1 {
-    height: 15rem;
+    /* height: 15rem; */
   }
 }
 @media screen and (max-width: 320px) {
   .box1 {
     flex-direction: column-reverse;
+    height: 20rem;
   }
 }
 
-@media (max-width:520px) {
+@media (max-width: 520px) {
   .ups {
     font-size: 3rem !important;
   }
@@ -240,12 +251,12 @@ justify-content: center;
   .left {
     margin-bottom: 1rem;
   }
-  .containerr h1{
-font-size: 1.6rem !important;
+  .containerr h1 {
+    font-size: 1.6rem !important;
   }
 }
 
-@media (max-width:520px) {
+@media (max-width: 520px) {
   .ups {
     font-size: 2.5rem !important;
   }
@@ -255,8 +266,8 @@ font-size: 1.6rem !important;
   .left {
     margin-bottom: 1rem;
   }
-  .containerr h1{
-font-size: 1.6rem !important;
+  .containerr h1 {
+    font-size: 1.6rem !important;
   }
   .box1 {
     margin-top: 2rem;
