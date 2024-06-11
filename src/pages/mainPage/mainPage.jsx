@@ -12,6 +12,7 @@ import FAQ from "../../components/questions/question";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import "./mainPage.css";
+// import Footer from "../../components/footer/footer";
 
 export default function MainPage() {
   return (
@@ -26,6 +27,7 @@ export default function MainPage() {
       <Partners />
       <FAQ />
       <Footer />
+
     </>
   );
 }

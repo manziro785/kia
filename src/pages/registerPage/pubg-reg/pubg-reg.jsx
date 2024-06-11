@@ -303,7 +303,7 @@ export default function Pubgreg() {
                         </div>
                         <div className="navbar" onClick={handleRedirect}>
                            
-                            <div onClick={redirect} >СВЯЗАТЬСЯ С НАМИ</div>
+                            <div >СВЯЗАТЬСЯ С НАМИ</div>
                         </div>
                     </div>
                 </div>
