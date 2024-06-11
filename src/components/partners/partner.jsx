@@ -138,7 +138,54 @@ const Partners = () => {
                   Федерация Компьютерного Спорта Кыргызской Республики
                 </div>
               </div>
-            </SwiperSlide>{" "}
+            </SwiperSlide>
+            <div className="paprtnersdouble">
+              <SwiperSlide>
+                <div className="sponsor-item">
+                  <a href="https://alatoo.edu.kg/">
+                    <img src={ala} className="sponsor-image" alt="Ала-Тоо" />
+                  </a>
+                  <div className="sponsor-name">
+                    Международный университет "Ала-Тоо"
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="sponsor-item">
+                  <a href="https://ict.sanarip.org/">
+                    <img
+                      src={sanarip}
+                      className="sponsor-image"
+                      alt="Санарип"
+                      style={{ background: "white" }}
+                    />
+                  </a>
+                  <div className="sponsor-name">
+                    Министерство цифрового развития Кыргызской Республики
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="sponsor-item">
+                  <a href="https://www.kia-bishkek.kg/">
+                    <img src={kiaorig} className="sponsor-image" alt="KIA" />
+                  </a>
+                  <div className="sponsor-name">
+                    Официальный дистрибьютор Kia в Кыргызстане
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="sponsor-item">
+                  <a href="https://esf.kg/">
+                    <img src={flag} className="sponsor-image" alt="Flag" />
+                  </a>
+                  <div className="sponsor-name">
+                    Федерация Компьютерного Спорта Кыргызской Республики
+                  </div>
+                </div>
+              </SwiperSlide>{" "}
+            </div>
           </Swiper>
         </div>
         {/* </div> */}
