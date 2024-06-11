@@ -8,9 +8,6 @@ import bgcar from "../../assets/car back.svg";
 export default function Car() {
   return (
     <div>
-      <div className="title-car">
-        <img src={d1} alt="" />
-      </div>
       <div
         className="wrapp-car"
         id="car"
