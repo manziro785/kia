@@ -92,12 +92,12 @@
 }
 @media (max-width: 460px) {
   .container-n {
-    transform: scale(0.4);
+    transform: scale(0.5);
   }
 }
 
 @media (max-width: 350px) {
   .container-n {
-    transform: scale(0.3);
+    transform: scale(0.4);
   }
 }

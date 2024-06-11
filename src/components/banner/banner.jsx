@@ -12,17 +12,15 @@ export default function Banner() {
       {/* <Header/> */}
 
       <main className="banner" style={{ background: `url(${bgpark})` }}>
-        {/* <div className="title-mm"></div> */}
-        <div className="sanarip-img">
-          <img className="sanarip" src={sp} />
+        <div className="blockMain">
+          <div className="sanarip-img">
+            <img className="sanarip" src={sp} />
+          </div>
+          <div className="tt">
+            <img src={dd} alt="" />
+          </div>
+          <Timer />
         </div>
-        <div className="tt">
-          <img src={dd} alt="" />
-        </div>
-        {/* <div className="intro"> */}
-        {/* <div className="big-logo"></div> */}
-        {/* </div> */}
-        <Timer />
       </main>
     </div>
   );

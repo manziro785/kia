@@ -308,6 +308,11 @@ body {
     left: -240px;
   }
 }
+@media (max-width: 468px) {
+  .containerr h1 {
+    margin: 0 !important;
+  }
+}
 @media (max-width: 425px) {
   .evSlider {
     width: 82vw;
