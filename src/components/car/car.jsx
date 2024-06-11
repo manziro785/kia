@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./car.css";
 
 import d1 from "../../assets/car/Frame 1 (1).svg";
@@ -6,6 +6,7 @@ import d2 from "../../assets/car/kia-ev9-car-04 1.svg";
 import bgcar from "../../assets/car back.svg";
 
 export default function Car() {
+  const [classBtn, setClass] = useState(false);
   return (
     <div>
       <div
@@ -18,18 +19,23 @@ export default function Car() {
         </div>
         <div className="coneiner-car">
           <div className="car-content">
-            <div className="car-text">
-              <div>
+            <a
+              onClick={() => {
+                setClass(!classBtn), console.log(classBtn);
+              }}
+              className="morebtn"
+            >
+              {classBtn ? "Закрыть" : "Подробнее"}
+            </a>
+            <div className={`car-text${classBtn} car-text`}>
+              <div className="infocar">
                 Погружаясь в мир Kia EV9 — передового электрического
                 внедорожника на платформе E-GMP. Этот автомобиль обладает
                 запасом хода до 500 км на одной зарядке, мощностью до 400 л.с. и
-                быстрой зарядкой до 80% за 30 минут.
-              </div>
-              <div>
-                Созданный для впечатляющей производительности и экологической
-                чистоты, Kia EV9 идеально сочетается с турниром Kia CYBERCHAMP,
-                где передовые технологии встречаются с амбициями киберспортивных
-                чемпионов.
+                быстрой зарядкой до 80% за 30 минут. Созданный для впечатляющей
+                производительности и экологической чистоты, Kia EV9 идеально
+                сочетается с турниром Kia CYBERCHAMP, где передовые технологии
+                встречаются с амбициями киберспортивных чемпионов.
               </div>
               <div id="abs3">
                 Откройте для себя будущее с Kia EV9 и присоединяйтесь к нам на
