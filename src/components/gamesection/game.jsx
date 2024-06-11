@@ -23,7 +23,7 @@ const GameSection = () => {
               slidesPerView={1}
               spaceBetween={50}
               breakpoints={{
-                430: {
+                640: {
                   slidesPerView: 2,
                   spaceBetween: 20,
                 },
