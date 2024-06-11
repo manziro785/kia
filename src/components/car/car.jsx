@@ -16,6 +16,9 @@ export default function Car() {
         id="car"
         style={{ backgroundImage: `url(${bgcar})` }}
       >
+        <div className="title-car">
+          <img src={d1} alt="" />
+        </div>
         <div className="coneiner-car">
           <div className="car-content">
             <div className="car-text">
