@@ -188,10 +188,6 @@
 }
 
 @media (max-width: 480px) {
-  .header-logo {
-    width: 100px;
-  }
-
   .header-nav {
     display: none;
   }
@@ -233,12 +229,8 @@
 
 @media (max-width: 480px) {
   .header-logo {
-    width: 100px;
+    width: 9rem;
     display: flex;
     align-items: center;
-  }
-  .header,
-  .header-wrapper {
-    height: 50px;
   }
 }
