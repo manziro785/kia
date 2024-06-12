@@ -94,19 +94,18 @@
     background-size: cover !important;
   }
 }
-@media (max-width: 468px) {
+/* @media (max-width: 468px) {
   .tt {
     margin-bottom: 0;
   }
-}
+} */
 .tt img {
   width: 100%;
-  max-width: 1200px;
 }
 
 @media (max-width: 1300px) {
   .tt img {
-    width: 70%;
+    width: 80%;
   }
 }
 

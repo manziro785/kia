@@ -5,12 +5,12 @@
 /* .sponsors .containerr div {
   width: 75%;
 } */
-.title {
+.containerr h1 {
   color: white;
   text-align: left;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 80px;
+  margin-bottom: 80px !important;
 }
 .paprtnersdouble {
   display: block;

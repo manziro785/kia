@@ -64,7 +64,7 @@
 .cont div {
   text-align: left;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem !important;
   margin: 10px 0;
   transition: all 0.3s ease;
 }
@@ -92,6 +92,14 @@
 
 .contacts {
   margin-top: 20px;
+}
+@media (max-width: 1440px) {
+  .tittle-foot {
+    font-size: 25px !important;
+  }
+  .cont div {
+    font-size: 1rem !important;
+  }
 }
 @media (max-width: 1348px) {
   .contacts {

@@ -40,7 +40,7 @@ export default function Footer() {
                   style={{ cursor: "pointer" }}
                   onClick={handleCopyPhoneNumber}
                 >
-                  +996 559 880 208
+                  +996 990 088 589
                 </div>
                 {isCopied && (
                   <div className="wrapper-message">

@@ -1,5 +1,9 @@
 /* ... existing CSS ... */
 .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,19 +12,18 @@
   z-index: 13;
   background-color: #0000008e;
 }
-.header-logo-link {
-}
 .header-logo {
-  width: 120px;
-  height: 50px;
-  margin-top: 10px;
+  width: 10rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .header-logo img {
   width: 100%;
 }
-
+.wrapper {
+  width: 100%;
+}
 .header-wrapper {
   display: flex;
   align-items: center;

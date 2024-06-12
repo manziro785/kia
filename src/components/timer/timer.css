@@ -21,7 +21,7 @@
   font-weight: 700;
   /* line-height: 42.24px; */
   /* text-align: left; */
-  margin-bottom: 100px; /* Отступ вниз */
+  margin-bottom: 3vmax; /* Отступ вниз */
 }
 
 .timer-n {
@@ -75,29 +75,37 @@
 .time-unit-n {
   font-size: 73px; /* Размер шрифта для единиц времени */
 }
-
+@media (max-width: 1440px) {
+  .content-n {
+    font-size: 4vmax;
+  }
+}
 @media (max-width: 950px) {
-  .container-n {
+  .timer-n {
     transform: scale(0.8);
   }
 }
 
 @media (max-width: 768px) {
-  .container-n {
+  .timer-n {
     transform: scale(0.6);
   }
   .content-n {
-    flex-direction: column;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 460px) {
-  .container-n {
+  .content-n {
+    font-size: 1.6rem;
+    flex-direction: column;
+  }
+  .timer-n {
     transform: scale(0.5);
   }
 }
 
-@media (max-width: 350px) {
-  .container-n {
+@media (max-width: 375px) {
+  .timer-n {
     transform: scale(0.4);
   }
 }

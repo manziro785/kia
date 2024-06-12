@@ -261,10 +261,7 @@
   .faq-title {
     font-size: 24px !important;
   }
-  .title {
-    font-size: 38px !important;
-    margin-bottom: 20px !important;
-  }
+
   .content-layer h2 {
     font-size: 28px; /* Adjust the font size for smaller screens */
     margin-bottom: 0;
@@ -283,6 +280,9 @@
     font-size: 15px;
     height: 2rem;
     top: 70%;
+  }
+  .game-section {
+    margin-top: 2rem;
   }
 }
 

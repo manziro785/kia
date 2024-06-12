@@ -4,12 +4,14 @@
   text-align: left;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .watch-title {
   color: white;
   text-align: left;
   margin-bottom: 4rem;
+  font-size: 4rem !important;
 }
 
 .watch-title span {
@@ -28,21 +30,32 @@
 .video-container iframe {
   border-radius: 15px;
   width: 30%;
-  height: 33%;
+  height: 20rem;
+  /* height: 33%; */
 }
 
+@media screen and (max-width: 1800px) {
+  .watch-title {
+    font-size: 2.6rem !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .video-container iframe {
+    border-radius: 15px;
+    width: 30%;
+    height: 15rem;
+  }
+  .watch-title {
+    font-size: 2rem !important;
+  }
+}
 @media (max-width: 1024px) {
   .video-container iframe {
     width: calc(50% - 20px);
   }
 }
 @media (max-width: 648px) {
-  .video-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   .video-container iframe {
     width: 60%;
     height: 50%;
@@ -51,6 +64,19 @@
 @media (max-width: 768px) {
   .watch-title {
     text-align: center;
+  }
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-container iframe {
+    width: 90%;
+    height: 20rem;
+  }
+  .watch-container {
+    padding: 0;
   }
 }
 @media (max-width: 430px) {

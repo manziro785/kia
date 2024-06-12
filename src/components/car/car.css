@@ -85,12 +85,12 @@
 .car-text div {
   font-family: "Kia li" !important;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: white;
   margin-bottom: 20px;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 1.7rem;
+  line-height: 3rem;
 }
 
 .car-img img {
@@ -112,17 +112,21 @@
 .morebtn {
   display: none;
 }
+#secPara {
+  margin: 2rem 0;
+}
 .photo-container2 img {
   width: 100%;
 }
 @media (max-width: 2000px) {
   .car-text div {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 1500px) {
   .car-text div {
     font-size: 1.3rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -177,7 +181,7 @@
     transition: 0.5s;
 
     -webkit-line-clamp: inherit !important;
-    height: 30rem;
+    height: 33rem;
   }
   .car-textfalse {
     height: 10rem;
@@ -197,8 +201,10 @@
   }
   .morebtn {
     display: block;
-    width: 10rem;
-    padding: 1rem 1.5rem;
+    background-color: #b4002d;
+    width: 6rem;
+    border-radius: 16px;
+    padding: 6px 16px;
     transition: 1s;
     text-align: center;
   }
@@ -209,10 +215,13 @@
     align-items: center;
     margin-top: 50px;
   }
+  #secPara {
+    margin: 0;
+  }
 }
-@media (max-width: 425px) {
+@media (max-width: 386px) {
   .car-texttrue {
-    height: 36rem;
+    height: 37rem;
   }
 }
 
@@ -232,5 +241,10 @@
   }
   .car-content {
     margin-top: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .car-texttrue {
+    height: 42rem;
   }
 }

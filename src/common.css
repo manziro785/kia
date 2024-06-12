@@ -32,5 +32,15 @@ body {
   margin: 0 auto;
 }
 .containerr h1 {
-  font-size: 2rem !important;
+  font-size: 4rem !important;
+}
+@media screen and (max-width: 1800px) {
+  .containerr h1 {
+    font-size: 2.6rem !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .containerr h1 {
+    font-size: 2.1rem !important;
+  }
 }

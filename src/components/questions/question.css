@@ -87,7 +87,7 @@
   color: white;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500 !important;
 }
 
@@ -101,7 +101,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500 !important;
 }
 
@@ -145,6 +145,10 @@
 @media (max-width: 1440px) {
   .faq-container {
     max-width: 1200px;
+  }
+  .faq-question,
+  .faq-answer {
+    font-size: 1rem;
   }
 }
 @media (max-width: 768px) {
