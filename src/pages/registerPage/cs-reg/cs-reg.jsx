@@ -209,9 +209,7 @@
 //     </>
 //   )
 // }
-
-
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './cs-reg.css';
 import axios from 'axios';
@@ -234,13 +232,6 @@ export default function Regcs() {
   const [errors, setErrors] = useState({});
   const [isAlertVisible, setIsAlertVisible] = useState(false);
   const navigate = useNavigate();
-  const phoneInputRef = useRef(null);
-
-  useEffect(() => {
-    if (phoneInputRef.current) {
-      phoneInputRef.current.setSelectionRange(5, 5);
-    }
-  }, []);
 
   const handleRedirect = () => {
     navigate("/");
@@ -249,23 +240,21 @@ export default function Regcs() {
   const validate = () => {
     const errors = {};
     if (!formData.team_name) errors.team_name = "Введите название команды";
-    if (!formData.phone_number)
-      errors.phone_number = "Введите номер телефона капитана";
-    if (!formData.player_1)
-      errors.player_1 = "Введите имя и фамилию первого игрока";
-    if (!formData.player_2)
-      errors.player_2 = "Введите имя и фамилию второго игрока";
-    if (!formData.player_3)
-      errors.player_3 = "Введите имя и фамилию третьего игрока";
-    if (!formData.player_4)
-      errors.player_4 = "Введите имя и фамилию четвертого игрока";
-    if (!formData.player_5)
-      errors.player_5 = "Введите имя и фамилию пятого игрока";
+    if (!formData.phone_number) errors.phone_number = "Введите номер телефона капитана";
+    if (!formData.player_1) errors.player_1 = "Введите имя и фамилию первого игрока";
+    if (!formData.player_2) errors.player_2 = "Введите имя и фамилию второго игрока";
+    if (!formData.player_3) errors.player_3 = "Введите имя и фамилию третьего игрока";
+    if (!formData.player_4) errors.player_4 = "Введите имя и фамилию четвертого игрока";
+    if (!formData.player_5) errors.player_5 = "Введите имя и фамилию пятого игрока";
     return errors;
   };
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handlePhoneChange = (e) => {
+    setFormData({ ...formData, phone_number: e.target.value });
   };
 
   const handleSubmit = async (e) => {
@@ -294,138 +283,139 @@ export default function Regcs() {
     }
   };
 
-    return (
-        <>
-            <div className="wrapp-reg-logo">
-                <div className="header-reg">
-                    <div className="header-register">
-                        <div className="loogo" onClick={handleRedirect}>
-                            <img src={left} alt="" />
-                            <div>НА ГЛАВНУЮ</div>
-                        </div>
-                        <div className="navbar" onClick={handleRedirect}>
-                            
-                            <div>СВЯЗАТЬСЯ С НАМИ</div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <>
+      <div className="wrapp-reg-logo">
+        <div className="header-reg">
+          <div className="header-register">
+            <div className="loogo" onClick={handleRedirect}>
+              <img src={left} alt="" />
+              <div>НА ГЛАВНУЮ</div>
             </div>
-            <div className="container-reg" style={{ backgroundImage: `url(${cs})` }}>
-                <div className="logo-kia">
-                    <img src={bgkia} alt="" />
-                </div>
-                <div className="reg-box">
-                    <div className="title-reg">РЕГИСТРАЦИЯ</div>
-                    <div className="main-reg">
-                        <form onSubmit={handleSubmit} className="registration-form">
-                            <div className="main-wrap-reg">
-                                <div className="left-reg">
-                                    <div className="inputs-left">
-                                        <div className="form-group">
-                                            <div>Название команды:</div>
-                                            <input
-                                                type="text"
-                                                name="team_name"
-                                                className="input-left"
-                                                placeholder="Введите название команды"
-                                                value={formData.team_name}
-                                                onChange={handleChange}
-                                            />
-                                            {errors.team_name && <span className="error">{errors.team_name}</span>}
-                                        </div>
-                                        <div className="form-group">
-                                            <div>Номер телефона капитана команды:</div>
-                                            <InputMask
-                                                mask="+996 (999) 999-999"
-                                                value={formData.phone_number}
-                                                onChange={handleChange}
-                                            >
-                                                {(inputProps) => (
-                                                    <input
-                                                        {...inputProps}
-                                                        type="text"
-                                                        name="phone_number"
-                                                        className="input-left"
-                                                        placeholder="Введите номер телефона"
-                                                        ref={phoneInputRef}
-                                                    />
-                                                )}
-                                            </InputMask>
-                                            {errors.phone_number && <span className="error">{errors.phone_number}</span>}
-                                        </div>
-                                    </div>
-                                    <div className="subm-reg">
-                                        <button type="submit" className="submit-button">Участвовать</button>
-                                    </div>
-                                </div>
-                                <div className="right-reg">
-                                    <div className="form-group">
-                                    <div>Фамилия и имя участников команды:</div>
-                                        <input
-                                            type="text"
-                                            name="player_1"
-                                            className="input-right"
-                                            placeholder="Введите имя и фамилию первого игрока"
-                                            value={formData.player_1}
-                                            onChange={handleChange}
-                                        />
-                                        {errors.player_1 && <span className="error">{errors.player_1}</span>}
-                                    </div>
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            name="player_2"
-                                            className="input-right"
-                                            placeholder="Введите имя и фамилию второго игрока"
-                                            value={formData.player_2}
-                                            onChange={handleChange}
-                                        />
-                                        {errors.player_2 && <span className="error">{errors.player_2}</span>}
-                                    </div>
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            name="player_3"
-                                            className="input-right"
-                                            placeholder="Введите имя и фамилию третьего игрока"
-                                            value={formData.player_3}
-                                            onChange={handleChange}
-                                        />
-                                        {errors.player_3 && <span className="error">{errors.player_3}</span>}
-                                    </div>
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            name="player_4"
-                                            className="input-right"
-                                            placeholder="Введите имя и фамилию четвертого игрока"
-                                            value={formData.player_4}
-                                            onChange={handleChange}
-                                        />
-                                        {errors.player_4 && <span className="error">{errors.player_4}</span>}
-                                    </div>
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            name="player_5"
-                                            className="input-right"
-                                            placeholder="Введите имя и фамилию пятого игрока"
-                                            value={formData.player_5}
-                                            onChange={handleChange}
-                                        />
- {errors.player_5 && <span className="error">{errors.player_5}</span>}
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        {isAlertVisible && (
-                            <div className="alert">
-                                Регистрация прошла успешно!
-                            </div>
+            <div className="navbar" onClick={handleRedirect}>
+              <div>СВЯЗАТЬСЯ С НАМИ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container-reg" style={{ backgroundImage: `url(${cs})` }}>
+        <div className="logo-kia">
+          <img src={bgkia} alt="" />
+        </div>
+        <div className="reg-box">
+          <div className="title-reg">РЕГИСТРАЦИЯ</div>
+          <div className="main-reg">
+            <form onSubmit={handleSubmit} className="registration-form">
+              <div className="main-wrap-reg">
+                <div className="left-reg">
+                  <div className="inputs-left">
+                    <div className="form-group">
+                      <div>Название команды:</div>
+                      <input
+                        type="text"
+                        name="team_name"
+                        className="input-left"
+                        placeholder="Введите название команды"
+                        value={formData.team_name}
+                        onChange={handleChange}
+                      />
+                      {errors.team_name && <span className="error">{errors.team_name}</span>}
+                    </div>
+                    <div className="form-group">
+                      <div>Номер телефона капитана команды:</div>
+                      <InputMask
+                        mask="+\999 999999999"
+                        maskChar={null}
+                        value={formData.phone_number}
+                        onChange={handlePhoneChange}
+                      >
+                        {(inputProps) => (
+                          <input
+                            {...inputProps}
+                            type="text"
+                            name="phone_number"
+                            className="input-left"
+                            placeholder="+996 (555) 555-555"
+                          />
                         )}
+                      </InputMask>
+                      {errors.phone_number && <span className="error">{errors.phone_number}</span>}
                     </div>
+                  </div>
+                  <div className="subm-reg">
+                    <button type="submit" className="submit-button">Участвовать</button>
+                  </div>
                 </div>
-            </div>
-        </>
-    );
+                <div className="right-reg">
+                  <div className="form-group">
+                    <div>Фамилия и имя участников команды:</div>
+                    <input
+                      type="text"
+                      name="player_1"
+                      className="input-right"
+                      placeholder="Введите имя и фамилию первого игрока"
+                      value={formData.player_1}
+                      onChange={handleChange}
+                    />
+                    {errors.player_1 && <span className="error">{errors.player_1}</span>}
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="player_2"
+                      className="input-right"
+                      placeholder="Введите имя и фамилию второго игрока"
+                      value={formData.player_2}
+                      onChange={handleChange}
+                    />
+                    {errors.player_2 && <span className="error">{errors.player_2}</span>}
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="player_3"
+                      className="input-right"
+                      placeholder="Введите имя и фамилию третьего игрока"
+                      value={formData.player_3}
+                      onChange={handleChange}
+                    />
+                    {errors.player_3 && <span className="error">{errors.player_3}</span>}
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="player_4"
+                      className="input-right"
+                      placeholder="Введите имя и фамилию четвертого игрока"
+                      value={formData.player_4}
+                      onChange={handleChange}
+                    />
+                    {errors.player_4 && <span className="error">{errors.player_4}</span>}
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="player_5"
+                      className="input-right"
+                      placeholder="Введите имя и фамилию пятого игрока"
+                      value={formData.player_5}
+                      onChange={handleChange}
+                    />
+                    {errors.player_5 && <span className="error">{errors.player_5}</span>}
+                  </div>
+                </div>
+              </div>
+            </form>
+            {isAlertVisible && (
+              <div className="alert">
+                Регистрация прошла успешно!
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
+
+    
